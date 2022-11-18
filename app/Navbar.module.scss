@@ -1,0 +1,14 @@
+@import "styles/mixins.scss";
+
+.container {
+  @include flex(space-between);
+  height: 125px;
+}
+
+.logoContainer {
+  margin-left: 1rem;
+}
+
+.logo {
+  transform: scale(0.9);
+}
