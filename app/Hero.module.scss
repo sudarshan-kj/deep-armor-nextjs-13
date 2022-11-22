@@ -1,0 +1,67 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
+.container {
+  background: linear-gradient(102.57deg, #124f7b 55.39%, #e2e5e8 181.19%);
+  @include flex(flex-start);
+  padding-left: 1.5rem;
+  height: 200px;
+  @include md-and-above {
+    padding-left: 5rem;
+    height: 220px;
+    background: linear-gradient(102.57deg, #124f7b 32.39%, #e2e5e8 181.19%);
+  }
+  @include lg-and-above {
+    padding-left: 10rem;
+    height: 320px;
+  }
+}
+
+.heading {
+  font-family: "SegoeUI";
+  h2 {
+    @include md-and-above {
+      font-size: 2rem;
+    }
+    @include lg-and-above {
+      font-size: 3rem;
+    }
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    span {
+      color: #00d1ff;
+    }
+  }
+
+  p {
+    color: #dadada;
+    font-weight: 100;
+    max-width: 90%;
+    font-size: 0.8rem;
+    @include lg-and-above {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.image {
+  height: 100%;
+  width: 80%;
+  position: relative;
+
+  .mask {
+    height: 100%;
+    width: 100%;
+    background-color: #1b5885af;
+    @include md-and-above {
+      background-color: #124f7bb3;
+    }
+    position: absolute;
+  }
+
+  img {
+    object-fit: cover;
+    opacity: 1;
+  }
+}

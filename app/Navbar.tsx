@@ -7,7 +7,13 @@ const Navbar = () => {
       <div className={styles.logo}>
         <LogoPath className={styles.svgLogo} />
       </div>
-      <div className={styles.actions}></div>
+      {/*TODO: Create hamburger for mobile devices*/}
+      <div className={styles.actions}>
+        <h4>solutions</h4>
+        <h4>blog</h4>
+        <h4>about us</h4>
+        <h4 className={styles.contact}>contact</h4>
+      </div>
     </div>
   );
 };

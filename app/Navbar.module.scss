@@ -1,8 +1,17 @@
 @import "styles/mixins.scss";
+@import "styles/variables.scss";
 
 .container {
   @include flex(space-between);
-  height: 125px;
+  height: 100px;
+  margin: 0 1rem;
+
+  @include md-and-above {
+    margin: 0 5rem;
+  }
+  @include lg-and-above {
+    margin: 0 10rem;
+  }
 }
 
 .logoContainer {
@@ -11,4 +20,26 @@
 
 .logo {
   transform: scale(0.9);
+}
+
+.actions {
+  display: flex;
+
+  h4 {
+    margin-left: 2.1rem;
+    @include lg-and-above {
+      margin-left: 5rem;
+    }
+  }
+
+  .contact {
+    border: 2px solid $contact-border;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-top: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

@@ -6,28 +6,28 @@
   justify-content: $justify;
 }
 
-@mixin sm {
+@mixin sm-and-above {
   @media (min-width: #{$screen-sm-min}) {
     @content;
   }
 }
 
 // Medium devices
-@mixin md {
+@mixin md-and-above {
   @media (min-width: #{$screen-md-min}) {
     @content;
   }
 }
 
 // Large devices
-@mixin lg {
+@mixin lg-and-above {
   @media (min-width: #{$screen-lg-min}) {
     @content;
   }
 }
 
 // Extra large devices
-@mixin xl {
+@mixin xl-and-above {
   @media (min-width: #{$screen-xl-min}) {
     @content;
   }

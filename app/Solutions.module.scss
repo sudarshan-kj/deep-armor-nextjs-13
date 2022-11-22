@@ -1,0 +1,48 @@
+@import "styles/mixins.scss";
+
+.servicesContainer {
+  margin: 0 2rem;
+  h2 {
+    color: #343434;
+    text-transform: uppercase;
+  }
+  .psAssessmentsContainer {
+    @include flex(center);
+    margin-top: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #dcf2ff;
+    .heading {
+      text-transform: uppercase;
+      color: grey;
+      text-align: center;
+    }
+  }
+
+  .servicesItemsContainer {
+    @include flex(space-around);
+    margin-top: 2rem;
+    flex-flow: row wrap;
+  }
+
+  .serviceItemContainer {
+    flex: 1 180px;
+    height: 200px;
+    text-align: center;
+    font-family: "SegoeUI";
+    @include flex(flex-start);
+    flex-direction: column;
+    .serviceItem {
+      @include flex(center);
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      background: linear-gradient(101.2deg, #bbe9ff 15.01%, #d8f3ff 133.1%);
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 6px #13507c;
+    }
+    .label {
+      font-weight: 700;
+    }
+  }
+}
