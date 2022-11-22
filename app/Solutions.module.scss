@@ -1,7 +1,13 @@
 @import "styles/mixins.scss";
 
+.test {
+  height: 200px;
+  background-color: #343434;
+  color: #fff;
+}
+
 .servicesContainer {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
   h2 {
     color: #343434;
     text-transform: uppercase;
@@ -20,10 +26,19 @@
     }
   }
 
+  .nonPsServicesContainer {
+    @include flex(center);
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
   .servicesItemsContainer {
     @include flex(space-around);
     margin-top: 2rem;
     flex-flow: row wrap;
+    svg {
+      transform: scale(0.8);
+    }
   }
 
   .serviceItemContainer {

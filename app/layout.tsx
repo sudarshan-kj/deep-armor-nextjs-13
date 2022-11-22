@@ -1,8 +1,6 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Hero from "./Hero";
 import "/styles/global.scss";
-import Solutions from "./Solutions";
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -24,17 +22,9 @@ export default function RootLayout({
         <title>Deep Armor</title>
       </head>
       <body>
-        <header>
-          <Navbar />
-        </header>
-        <Hero />
-        <main>
-          <Solutions />
-          <div>This will take some effort and time</div>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

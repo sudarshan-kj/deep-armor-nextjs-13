@@ -3,7 +3,7 @@ import LogoPath from "/assets/logo.svg";
 
 const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <div className={styles.logo}>
         <LogoPath className={styles.svgLogo} />
       </div>
@@ -14,7 +14,7 @@ const Navbar = () => {
         <h4>about us</h4>
         <h4 className={styles.contact}>contact</h4>
       </div>
-    </div>
+    </header>
   );
 };
 

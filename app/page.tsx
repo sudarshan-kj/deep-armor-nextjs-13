@@ -1,5 +1,7 @@
 import React from "react";
 import type { TestimonialType } from "../types";
+import Hero from "./Hero";
+import Solutions from "./Solutions";
 
 async function getTestimonials() {
   try {
@@ -15,5 +17,13 @@ export default async function LandingPage() {
   // Fetch data directly in a Server Component
   const testimonials: Array<TestimonialType> = await getTestimonials();
   // Forward fetched data to your Client Component
-  return <div>Hello there on Landing Page</div>;
+  return (
+    <div>
+      <Hero />
+      <main>
+        <Solutions />
+        <div>This will take some effort and time</div>
+      </main>
+    </div>
+  );
 }

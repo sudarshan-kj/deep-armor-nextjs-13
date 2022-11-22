@@ -4,13 +4,17 @@
 .container {
   @include flex(space-between);
   height: 100px;
-  margin: 0 1rem;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  background-color: $bg-color;
+  z-index: 1;
 
   @include md-and-above {
-    margin: 0 5rem;
+    padding: 0 5rem;
   }
   @include lg-and-above {
-    margin: 0 10rem;
+    padding: 0 10rem;
   }
 }
 
