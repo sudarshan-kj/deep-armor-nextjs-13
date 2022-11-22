@@ -17,7 +17,7 @@ const Hero = () => {
         </p>
       </div>
       <div className={styles.image}>
-        <Image src={lighthouse} fill="cover" alt="lighthouse" />
+        <Image src={lighthouse} fill={true} alt="lighthouse" />
         <div className={styles.mask} />
       </div>
     </div>

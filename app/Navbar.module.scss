@@ -41,8 +41,11 @@
     border-radius: 5px;
     padding: 4px 10px;
     margin-top: 1rem;
+    transition: all 0.2s ease-in;
 
     &:hover {
+      background: $hero-bg-color;
+      color: #fff;
       cursor: pointer;
     }
   }

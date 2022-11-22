@@ -1,11 +1,5 @@
 @import "styles/mixins.scss";
 
-.test {
-  height: 200px;
-  background-color: #343434;
-  color: #fff;
-}
-
 .servicesContainer {
   margin: 0 1.5rem;
   h2 {
@@ -55,6 +49,17 @@
       width: 100px;
       background: linear-gradient(101.2deg, #bbe9ff 15.01%, #d8f3ff 133.1%);
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 6px #13507c;
+      transition: box-shadow 0.2s ease-out;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover .serviceItem {
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 6px #13507c,
+        0 0 6px 12px #a6e0fb;
+    }
+    &:active .serviceItem {
+      transform: scale(0.98);
     }
     .label {
       font-weight: 700;
