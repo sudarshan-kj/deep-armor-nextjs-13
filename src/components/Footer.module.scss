@@ -1,0 +1,24 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.footerContainer {
+  @include flex(space-between);
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background: $contact-us-bg;
+  padding: 1rem 0;
+
+  h1 {
+    color: $contact-us-color;
+  }
+  h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    span {
+      color: $contact-us-color;
+    }
+  }
+}

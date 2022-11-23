@@ -1,0 +1,13 @@
+@import "src/styles/mixins.scss";
+.container {
+  @include flex(center);
+  height: calc(100vh - 120px);
+
+  .errorMsgContainer {
+    @include flex(center);
+    flex-direction: column;
+    border: 2px solid red;
+    padding: 2.5rem;
+    border-radius: 5px;
+  }
+}

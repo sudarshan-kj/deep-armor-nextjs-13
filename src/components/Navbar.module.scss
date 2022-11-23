@@ -27,12 +27,19 @@
 }
 
 .actions {
-  display: flex;
-
+  @include flex(space-between);
+  width: 350px;
+  @include lg-and-above {
+    width: 450px;
+  }
   h4 {
-    margin-left: 2.1rem;
-    @include lg-and-above {
-      margin-left: 5rem;
+    margin: 0;
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        color: $nav-hover-link-color;
+      }
     }
   }
 
@@ -40,9 +47,6 @@
     border: 2px solid $contact-border;
     border-radius: 5px;
     padding: 4px 10px;
-    margin-top: 1rem;
-    transition: all 0.2s ease-in;
-
     &:hover {
       background: $hero-bg-color;
       color: #fff;

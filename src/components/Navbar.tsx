@@ -3,6 +3,10 @@ import LogoPath from "src/assets/icons/logo.svg";
 import Link from "next/link";
 
 const Navbar = () => {
+  const handleContactClick = () => {
+    document?.querySelector("footer")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header className={styles.container}>
       <Link href="/">
@@ -11,18 +15,20 @@ const Navbar = () => {
         </div>
       </Link>
       {/*TODO: Create hamburger for mobile devices*/}
-      <div className={styles.actions}>
-        <Link href="/solutions">
-          <h4>solutions</h4>
-        </Link>
-        <Link href="/blog">
-          <h4>blog</h4>
-        </Link>
-        <Link href="/about-us">
-          <h4>about us</h4>
-        </Link>
-        <h4 className={styles.contact}>contact</h4>
-      </div>
+      <nav className={styles.actions}>
+        <h4>
+          <Link href="/solutions">solutions</Link>
+        </h4>
+        <h4>
+          <Link href="/blog">blog</Link>
+        </h4>
+        <h4>
+          <Link href="/about-us">about us</Link>
+        </h4>
+        <h4 className={styles.contact} onClick={handleContactClick}>
+          contact
+        </h4>
+      </nav>
     </header>
   );
 };
