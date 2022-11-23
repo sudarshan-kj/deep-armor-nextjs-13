@@ -1,4 +1,4 @@
-import "/styles/global.scss";
+import "src/styles/global.scss";
 import Layout from "../components/layout";
 import { Outfit } from "@next/font/google";
 

@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.scss";
-import LogoPath from "/assets/icons/logo.svg";
+import LogoPath from "src/assets/icons/logo.svg";
 import Link from "next/link";
 
 const Navbar = () => {

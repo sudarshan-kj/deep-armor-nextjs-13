@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     "ext/types/**/*.ts",
-    "assets/icons/index.js",
+    "src/assets/icons/index.js",
     ".next/types/**/*.ts"
   ],
   "exclude": [

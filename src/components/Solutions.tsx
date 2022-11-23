@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Solutions.module.scss";
-import DeviceIcon from "/assets/icons/device-security.svg";
-import NetworkIcon from "/assets/icons/network-security.svg";
-import WebMobileCloudIcon from "/assets/icons/web-mobile-cloud-security.svg";
-import HardwareIcon from "/assets/icons/hardware-security.svg";
-import VirtualCisoIcon from "/assets/icons/virtual-ciso.svg";
-import TrainingIcon from "/assets/icons/training.svg";
-import GdprIcon from "/assets/icons/gdpr.svg";
-import ConsultingIcon from "/assets/icons/consulting.svg";
+import DeviceIcon from "src/assets/icons/device-security.svg";
+import NetworkIcon from "src/assets/icons/network-security.svg";
+import WebMobileCloudIcon from "src/assets/icons/web-mobile-cloud-security.svg";
+import HardwareIcon from "src/assets/icons/hardware-security.svg";
+import VirtualCisoIcon from "src/assets/icons/virtual-ciso.svg";
+import TrainingIcon from "src/assets/icons/training.svg";
+import GdprIcon from "src/assets/icons/gdpr.svg";
+import ConsultingIcon from "src/assets/icons/consulting.svg";
 
 const ServiceItem = ({ label, Icon }: { label: string; Icon: any }) => {
   return (
