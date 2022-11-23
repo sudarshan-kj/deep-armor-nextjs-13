@@ -1,8 +1,15 @@
 import "/styles/global.scss";
-import React from "react";
+import Layout from "../components/layout";
+import { Outfit } from "@next/font/google";
 
-const App = () => {
-  return <div>App</div>;
-};
+const outfit = Outfit({ subsets: ["latin"] });
 
-export default App;
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <div className={outfit.className}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </div>
+  );
+}

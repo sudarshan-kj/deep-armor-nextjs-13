@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./Hero.module.scss";
-import lighthouse from "/assets/lighthouse.jpg";
+import lighthouse from "/assets/images/lighthouse.jpg";
 
 const Hero = () => {
   return (
