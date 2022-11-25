@@ -8,6 +8,9 @@ import VirtualCisoIcon from "src/assets/icons/virtual-ciso.svg";
 import TrainingIcon from "src/assets/icons/training.svg";
 import GdprIcon from "src/assets/icons/gdpr.svg";
 import ConsultingIcon from "src/assets/icons/consulting.svg";
+import MedtechIcon from "src/assets/icons/medtech-vulnerability-calculator.svg";
+import CloudCostOptimizationIcon from "src/assets/icons/cloud-cost-optimization-recon.svg";
+import CloudSecurityGauntletIcon from "src/assets/icons/cloud-security-gauntlet.svg";
 
 const ServiceItem = ({ label, Icon }: { label: string; Icon: any }) => {
   return (
@@ -15,6 +18,15 @@ const ServiceItem = ({ label, Icon }: { label: string; Icon: any }) => {
       <div className={styles.serviceItem}>
         <Icon />
       </div>
+      <p className={styles.label}>{label}</p>
+    </div>
+  );
+};
+
+const ProductItem = ({ label, Icon }: { label: string; Icon: any }) => {
+  return (
+    <div className={styles.productItem}>
+      <Icon />
       <p className={styles.label}>{label}</p>
     </div>
   );
@@ -103,8 +115,44 @@ const Services = () => {
   );
 };
 
+interface ProductType {
+  id: number;
+  productName: string;
+  icon: React.ReactSVGElement;
+}
+
 const Products = () => {
-  return <div>Products</div>;
+  const products: Array<ProductType> = [
+    {
+      id: 0,
+      productName: "Cloud Security (Gauntlet)",
+      icon: CloudSecurityGauntletIcon,
+    },
+    {
+      id: 1,
+      productName: "Cloud Cost Optimization (Recon)",
+      icon: CloudCostOptimizationIcon,
+    },
+    {
+      id: 2,
+      productName: "Medtech Vulnerability Scoring",
+      icon: MedtechIcon,
+    },
+  ];
+  return (
+    <div className={styles.productsContainer}>
+      <h2>Products</h2>
+      <div className={styles.productsItemsContainer}>
+        {products.map((product) => (
+          <ProductItem
+            key={product.id}
+            label={product.productName}
+            Icon={product.icon}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 const Solutions = () => {
