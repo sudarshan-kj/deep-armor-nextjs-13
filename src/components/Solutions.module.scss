@@ -68,7 +68,7 @@
 }
 
 .productsContainer {
-  margin: 2rem 1.5rem 3rem 1.5rem;
+  margin: 1.5rem;
   h2 {
     color: #343434;
     text-transform: uppercase;
@@ -76,13 +76,12 @@
 
   .productsItemsContainer {
     @include flex(space-around);
-    margin-top: 2rem;
     flex-flow: row wrap;
   }
 
   .productItem {
     @include flex(center);
-    margin: 1rem;
+    margin: 1.5rem;
     font-family: "SegoeUI";
     text-align: center;
     border-radius: 10px;
