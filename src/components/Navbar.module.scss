@@ -7,7 +7,7 @@
   padding: 0 1rem;
   position: sticky;
   top: 0;
-  background-color: $bg-color;
+  background-color: $bg-color-light-blue;
   z-index: 1;
 
   @include md-and-above {
@@ -44,11 +44,11 @@
   }
 
   .contact {
-    border: 2px solid $contact-border;
+    border: 2px solid $item-border-light-blue;
     border-radius: 5px;
     padding: 4px 10px;
     &:hover {
-      background: $hero-bg-color;
+      background: $bg-color-dark-blue;
       color: #fff;
       cursor: pointer;
     }

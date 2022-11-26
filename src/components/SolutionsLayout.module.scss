@@ -1,0 +1,77 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.container {
+  .header {
+    background-color: lightblue;
+    padding: 1rem;
+    @include md-and-above {
+      padding: 1rem 5rem;
+    }
+
+    @include lg-and-above {
+      padding: 1rem 10rem;
+    }
+  }
+  .content {
+    padding: 1rem;
+    @include md-and-above {
+      padding: 0 5rem;
+      padding-top: 2rem;
+      display: flex;
+    }
+
+    @include lg-and-above {
+      padding: 0 10rem;
+      padding-top: 2rem;
+    }
+
+    nav {
+      @include md-and-above {
+        max-width: 300px;
+      }
+      position: sticky;
+      top: 150px;
+      align-self: flex-start;
+    }
+
+    nav ul {
+      list-style: none;
+      @include md-and-above {
+        border-right: 7px solid $item-border-light-blue;
+      }
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    nav li {
+      margin: 1rem;
+      padding: 0.6rem;
+      font-weight: bold;
+      max-width: 100px;
+      font-size: 0.9rem;
+      @include md-and-above {
+        font-size: initial;
+        max-width: initial;
+      }
+    }
+    nav li a {
+      text-decoration: none;
+      color: #000;
+      &:hover {
+        color: $nav-hover-link-color;
+      }
+    }
+
+    .selectedLink {
+      box-shadow: 0 4px 0 $item-border-light-blue;
+      @include md-and-above {
+        box-shadow: -7px 0 0 $item-border-light-blue;
+      }
+    }
+
+    .main {
+      padding: 2rem;
+    }
+  }
+}

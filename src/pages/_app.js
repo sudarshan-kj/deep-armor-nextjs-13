@@ -1,15 +1,15 @@
 import "src/styles/global.scss";
-import Layout from "../components/layout";
+import MainLayout from "../components/MainLayout";
 import { Outfit } from "@next/font/google";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export default function MyApp({ Component, pageProps }) {
+  const getLayout = Component.getLayout || ((page) => page);
+
   return (
     <div className={outfit.className}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <MainLayout>{getLayout(<Component {...pageProps} />)}</MainLayout>
     </div>
   );
 }

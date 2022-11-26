@@ -17,10 +17,14 @@ const Navbar = () => {
       {/*TODO: Create hamburger for mobile devices*/}
       <nav className={styles.actions}>
         <h4>
-          <Link href="/solutions">solutions</Link>
+          <Link href="/solutions/hardware-and-embedded-security">
+            solutions
+          </Link>
         </h4>
         <h4>
-          <Link href="/blog">blog</Link>
+          <Link target="_blank" href="https://medium.com/deep-armor">
+            blog
+          </Link>
         </h4>
         <h4>
           <Link href="/about-us">about us</Link>
