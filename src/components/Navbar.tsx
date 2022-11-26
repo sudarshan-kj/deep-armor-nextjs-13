@@ -27,7 +27,6 @@ const Navbar = () => {
           <LogoPath className={styles.svgLogo} />
         </div>
       </Link>
-      {/*TODO: Create hamburger for mobile devices*/}
       <nav className={styles.actions}>
         {isMediumScreen && (
           <>

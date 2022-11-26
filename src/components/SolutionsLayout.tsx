@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./SolutionsLayout.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -39,6 +39,14 @@ const SolutionsLayout = ({ children }: any) => {
   const [selectedLink, setSelectedLink] = useState(
     router.pathname || links[0].linkPath
   );
+
+  useEffect(() => {
+    /*when 'solutions' is clicked from nav bar, there is mismatch between what is shown as selected 
+    vs what is present as path in the url. To counter that, we explicitly make sure that the link and the selected item from 
+    menu are always in sync
+    */
+    if (router.pathname != selectedLink) setSelectedLink(router.pathname);
+  }, [router.pathname]);
 
   return (
     <div className={styles.container}>
