@@ -2,62 +2,52 @@
 @import "src/styles/variables.scss";
 
 .container {
-  @include flex(space-between);
-  height: 100px;
-  padding: 0 1rem;
+  background-color: $bg-color-light-blue;
   position: sticky;
   top: 0;
-  background-color: $bg-color-light-blue;
   z-index: 1;
+}
 
-  @include md-and-above {
-    padding: 0 5rem;
+.header {
+  @include flex(space-between);
+  padding: 1rem;
+  max-width: $max-window-width;
+  margin: 0 auto;
+
+  .logoContainer {
+    margin-left: 1rem;
   }
-  @include lg-and-above {
-    padding: 0 10rem;
+
+  .logo {
+    transform: scale(0.9);
   }
-}
-
-.logoContainer {
-  margin-left: 1rem;
-}
-
-.logo {
-  transform: scale(0.9);
-}
-
-.actions {
-  justify-content: flex-end;
-  width: 350px;
-  @include md-and-above {
+  .actions {
     @include flex(space-between);
-  }
-  @include lg-and-above {
-    width: 450px;
-  }
-  h4 {
-    margin: 0;
-    a {
-      text-decoration: none;
-      color: inherit;
-      &:hover {
-        color: $nav-hover-link-color;
+    h4 {
+      margin: 0 2rem;
+      a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          color: $nav-hover-link-color;
+        }
       }
     }
-  }
 
-  .contact {
-    border: 2px solid $item-border-light-blue;
-    border-radius: 5px;
-    padding: 4px 10px;
-    &:hover {
-      background: $bg-color-dark-blue;
-      color: #fff;
-      cursor: pointer;
+    .contact {
+      border: 2px solid $item-border-light-blue;
+      border-radius: 5px;
+      padding: 4px 10px;
+      margin-right: 0;
+      &:hover {
+        background: $bg-color-dark-blue;
+        color: #fff;
+        cursor: pointer;
+      }
     }
-  }
 
-  .menuIcon {
-    color: red;
+    .menuIcon {
+      color: red;
+    }
   }
 }

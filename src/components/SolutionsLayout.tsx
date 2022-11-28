@@ -50,31 +50,33 @@ const SolutionsLayout = ({ children }: any) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <h1>Our Services</h1>
+      <div className={styles.headerContainer}>
+        <div className={styles.header}>
+          <h1>Our Services</h1>
+        </div>
       </div>
-      <div className={styles.content}>
-        <nav>
-          <ul>
-            {services.map((service) => (
-              <li
-                key={service.id}
-                className={
-                  service.linkPath === selectedLink ? styles.selectedLink : ""
-                }
-              >
-                <Link
-                  onClick={() => setSelectedLink(service.linkPath)}
-                  href={service.linkPath}
+      <div className={styles.navbarAndMainContentContainer}>
+        <div className={styles.navbarAndMainContent}>
+          <nav>
+            <ul>
+              {services.map((service) => (
+                <li
+                  key={service.id}
+                  className={
+                    service.linkPath === selectedLink ? styles.selectedLink : ""
+                  }
                 >
-                  {service.serviceName}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className={styles.main}>
-          <h3>{children}</h3>
+                  <Link
+                    onClick={() => setSelectedLink(service.linkPath)}
+                    href={service.linkPath}
+                  >
+                    {service.serviceName}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className={styles.mainContent}>{children}</div>
         </div>
       </div>
     </div>

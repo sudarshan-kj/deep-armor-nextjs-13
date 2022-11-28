@@ -1,10 +1,14 @@
 @import "src/styles/mixins.scss";
 
+.solutionsContainer {
+  margin: 1.5rem;
+}
+
 .servicesContainer {
-  margin: 0 1.5rem;
   h2 {
     color: #343434;
     text-transform: uppercase;
+    margin: 1.5rem 0;
   }
   .psAssessmentsContainer {
     padding: 1rem;
@@ -14,6 +18,7 @@
       text-transform: uppercase;
       color: grey;
       text-align: center;
+      margin: 1rem 0;
     }
   }
 
@@ -58,10 +63,10 @@
 }
 
 .productsContainer {
-  margin: 1.5rem;
   h2 {
     color: #343434;
     text-transform: uppercase;
+    margin: 1.5rem 0;
   }
 
   .productsItemsContainer {

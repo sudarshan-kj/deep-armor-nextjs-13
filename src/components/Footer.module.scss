@@ -11,14 +11,17 @@
 
   h1 {
     color: $contact-us-color;
+    margin: 1.5rem 0;
   }
   h3 {
-    margin: 0;
     font-weight: 600;
     font-size: 1.2rem;
 
     span {
       color: $contact-us-color;
     }
+  }
+  h6 {
+    margin: 1.5rem 0;
   }
 }

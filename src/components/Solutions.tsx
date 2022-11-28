@@ -193,7 +193,7 @@ const Products = () => {
 
 const Solutions = () => {
   return (
-    <div>
+    <div className={styles.solutionsContainer}>
       <Services />
       <Products />
     </div>
