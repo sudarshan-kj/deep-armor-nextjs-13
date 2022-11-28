@@ -70,7 +70,9 @@
       }
 
       .mainContent {
-        padding: 0 2rem;
+        @include md-and-above {
+          padding: 0 2rem;
+        }
       }
     }
   }

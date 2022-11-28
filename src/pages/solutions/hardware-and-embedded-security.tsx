@@ -1,28 +1,30 @@
-import Image from "next/image";
 import SolutionsLayout from "src/components/SolutionsLayout";
-import styles from "./SolutionItem.module.scss";
-import medicinePills from "src/assets/images/medicine-pills.jpg";
+import hardware from "src/assets/images/hardware.jpg";
+import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const HardWareAndEmbeddedSecurity = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.headingAndImageContainer}>
-        <h2>Hardware and Embedded Security</h2>
-        <div className={styles.image}>
-          <Image src={medicinePills} fill={true} alt="medicine-pills" />
-        </div>
-      </div>
+    <SolutionItemLayout
+      heading="Hardware and Embedded System Security"
+      image={hardware}
+    >
       <p>
-        Ullamco aliquip elit excepteur amet. Mollit cupidatat id excepteur esse
-        ad sint nostrud cillum mollit cupidatat enim officia. Dolore nulla
-        laborum id non cillum dolore in magna. Enim reprehenderit anim
-        adipisicing pariatur dolor. Consequat nulla incididunt Lorem commodo
-        cupidatat commodo est veniam ullamco irure cillum mollit ad deserunt.
-        Culpa culpa fugiat tempor voluptate Lorem commodo commodo tempor ullamco
-        aute eiusmod. Ullamco sit irure officia duis Lorem ex laborum amet enim
-        velit.
+        Ex eiusmod in et velit do ad ex culpa consectetur eu id minim ea.
+        Incididunt consequat aliquip irure amet occaecat magna labore
+        adipisicing. Ipsum duis aute labore laboris enim nulla aute Lorem velit
+        Lorem. Ullamco enim irure anim adipisicing incididunt aute irure commodo
+        qui sunt irure. Eu duis labore dolore qui cupidatat nostrud sint ad
+        adipisicing eu.
       </p>
-    </div>
+      <p>
+        Culpa incididunt laboris sint ad in ut. Excepteur culpa sit occaecat
+        fugiat. Ex aute est ea ad sit sit aliqua eiusmod tempor qui sit aute ut.
+        Commodo excepteur eiusmod consequat eiusmod et ut. In et nisi veniam est
+        cillum sit sit enim cupidatat. Adipisicing esse sit dolor tempor. Labore
+        non cillum reprehenderit qui cupidatat laboris incididunt Lorem laboris
+        elit nostrud quis.
+      </p>
+    </SolutionItemLayout>
   );
 };
 

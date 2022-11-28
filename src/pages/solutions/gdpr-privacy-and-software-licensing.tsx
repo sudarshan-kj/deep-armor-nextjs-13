@@ -1,28 +1,32 @@
-import Image from "next/image";
 import SolutionsLayout from "src/components/SolutionsLayout";
-import styles from "./SolutionItem.module.scss";
-import medicinePills from "src/assets/images/medicine-pills.jpg";
+import signature from "src/assets/images/signature.jpg";
+import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const GdprPrivacyAndSoftwareLicensing = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.headingAndImageContainer}>
-        <h2>GDPR, Privacy and Software Licensing</h2>
-        <div className={styles.image}>
-          <Image src={medicinePills} fill={true} alt="lighthouse" />
-        </div>
-      </div>
+    <SolutionItemLayout
+      heading="GDPR, Privacy and Software Licensing"
+      image={signature}
+    >
       <p>
-        Ullamco aliquip elit excepteur amet. Mollit cupidatat id excepteur esse
-        ad sint nostrud cillum mollit cupidatat enim officia. Dolore nulla
-        laborum id non cillum dolore in magna. Enim reprehenderit anim
-        adipisicing pariatur dolor. Consequat nulla incididunt Lorem commodo
-        cupidatat commodo est veniam ullamco irure cillum mollit ad deserunt.
-        Culpa culpa fugiat tempor voluptate Lorem commodo commodo tempor ullamco
-        aute eiusmod. Ullamco sit irure officia duis Lorem ex laborum amet enim
-        velit.
+        Culpa incididunt laboris sint ad in ut. Excepteur culpa sit occaecat
+        fugiat. Ex aute est ea ad sit sit aliqua eiusmod tempor qui sit aute ut.
+        Commodo excepteur eiusmod consequat eiusmod et ut. In et nisi veniam est
+        cillum sit sit enim cupidatat. Adipisicing esse sit dolor tempor. Labore
+        non cillum reprehenderit qui cupidatat laboris incididunt Lorem laboris
+        elit nostrud quis.
       </p>
-    </div>
+      <p>
+        Elit pariatur do qui irure proident non deserunt ad culpa Lorem enim et
+        consequat. Reprehenderit sint nisi commodo dolore nisi quis tempor
+        veniam officia minim enim laboris esse excepteur. Ea nulla mollit dolore
+        laboris incididunt laborum nostrud do ad Lorem anim pariatur anim.
+        Aliquip pariatur aute non veniam duis cupidatat veniam labore laborum
+        est ipsum commodo excepteur. Aute deserunt excepteur ut duis eiusmod
+        deserunt ex elit deserunt ullamco voluptate cillum sint eiusmod. Irure
+        sit occaecat sunt excepteur.
+      </p>
+    </SolutionItemLayout>
   );
 };
 GdprPrivacyAndSoftwareLicensing.getLayout = (page: React.ReactElement) => (

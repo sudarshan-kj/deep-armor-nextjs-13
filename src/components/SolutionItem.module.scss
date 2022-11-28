@@ -1,0 +1,51 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.container {
+  .headingAndImageStickyContainer {
+    position: sticky;
+    top: $top-nav-bar-height;
+  }
+
+  .headingAndImageContainer {
+    height: 150px;
+  }
+  .image {
+    height: 100%;
+    position: relative;
+    .mask {
+      height: 100%;
+      width: 100%;
+      background-color: #124f7bb0;
+      position: absolute;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .headingContainer {
+    @include flex(center);
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    height: inherit;
+    max-width: 350px;
+    z-index: 2;
+    color: white;
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .dummyBox {
+    height: 30px;
+    background-color: $bg-color-light-blue;
+  }
+
+  .textContent {
+    font-size: 1.1rem;
+    p:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
