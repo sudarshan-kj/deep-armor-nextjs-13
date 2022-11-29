@@ -1,4 +1,5 @@
 @import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
 
 .solutionsContainer {
   margin: 1.5rem;
@@ -13,7 +14,7 @@
   .psAssessmentsContainer {
     padding: 1rem;
     border-radius: 5px;
-    background-color: #dcf2ff;
+    background-color: $bg-color-product-security-assessment-light-blue;
     .heading {
       text-transform: uppercase;
       color: grey;
@@ -49,7 +50,7 @@
         transform: scale(0.8);
       }
     }
-    &:hover .serviceItem {
+    @include hover(".serviceItem") {
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 6px #13507c,
         0 0 6px 12px #a6e0fb;
     }
@@ -90,13 +91,12 @@
     svg {
       transform: scale(0.8);
     }
-    &:hover {
+    @include hover() {
       cursor: pointer;
-    }
-    &:hover {
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 6px #13507c,
         0 0 6px 12px #a6e0fb;
     }
+
     &:active {
       transform: scale(0.98);
     }

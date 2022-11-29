@@ -115,6 +115,27 @@ export const services = [
   ...nonProductSecurityServices,
 ];
 
+export const products: Array<ProductType> = [
+  {
+    id: 0,
+    productName: "Cloud Security (Gauntlet)",
+    icon: CloudSecurityGauntletIcon,
+    linkPath: "https://deeparmor.com/",
+  },
+  {
+    id: 1,
+    productName: "Cloud Cost Optimization (Recon)",
+    icon: CloudCostOptimizationIcon,
+    linkPath: "https://deeparmor.com/",
+  },
+  {
+    id: 2,
+    productName: "Medtech Vulnerability Scoring",
+    icon: MedtechIcon,
+    linkPath: "https://deeparmor.com/",
+  },
+];
+
 const Services = () => {
   return (
     <div className={styles.servicesContainer}>
@@ -154,26 +175,6 @@ interface ProductType {
 }
 
 const Products = () => {
-  const products: Array<ProductType> = [
-    {
-      id: 0,
-      productName: "Cloud Security (Gauntlet)",
-      icon: CloudSecurityGauntletIcon,
-      linkPath: "https://deeparmor.com/",
-    },
-    {
-      id: 1,
-      productName: "Cloud Cost Optimization (Recon)",
-      icon: CloudCostOptimizationIcon,
-      linkPath: "https://deeparmor.com/",
-    },
-    {
-      id: 2,
-      productName: "Medtech Vulnerability Scoring",
-      icon: MedtechIcon,
-      linkPath: "https://deeparmor.com/",
-    },
-  ];
   return (
     <div className={styles.productsContainer}>
       <h2>Products</h2>

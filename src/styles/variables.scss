@@ -1,5 +1,7 @@
 $bg-color-light-blue: #e9f7ff;
 $bg-color-dark-blue: #13507c;
+$bg-color-menu-light-blue: #d9f3ff;
+$bg-color-product-security-assessment-light-blue: #dcf2ff;
 
 $item-border-light-blue: #0b8ccc;
 $heading-background-gradient-blue: linear-gradient(
@@ -14,4 +16,6 @@ $contact-us-bg: linear-gradient(102.57deg, #124f7b 32.39%, #e2e5e8 181.19%);
 $contact-us-color: #cfebff;
 
 $max-window-width: 1160px;
-$top-nav-bar-height: 90px;
+/*if the nav bar height changes for any reason, measure its height manually and update its value in px here
+ That will hep sticky headers stick accurately beneath the header*/
+$top-nav-bar-height: 92px;

@@ -24,30 +24,77 @@
   .actions {
     @include flex(space-between);
     h4 {
-      margin: 0 2rem;
-      a {
-        text-decoration: none;
-        color: inherit;
-        &:hover {
-          color: $nav-hover-link-color;
+      margin: 1rem 2rem;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      @include hover() {
+        color: $nav-hover-link-color;
+      }
+    }
+    .solutionsActionItem {
+      position: relative;
+      .solutionsPopupMenu {
+        position: absolute;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: $bg-color-menu-light-blue;
+        display: flex;
+        top: 50px;
+        box-shadow: 2px 4px 4px 1px #15527e36;
+        .services {
+          border-right: 1px solid black;
+          padding: 1rem;
+        }
+        .products {
+          padding: 1rem;
+        }
+        ul {
+          padding: 0;
+          list-style: none;
+        }
+        ul li {
+          font-weight: bold;
+          font-size: 0.8rem;
+          width: 150px;
+          margin-top: 1rem;
         }
       }
     }
 
     .contact {
-      border: 2px solid $item-border-light-blue;
+      outline: 2px solid $item-border-light-blue;
       border-radius: 5px;
       padding: 4px 10px;
       margin-right: 0;
-      &:hover {
+      @include hover() {
         background: $bg-color-dark-blue;
         color: #fff;
         cursor: pointer;
       }
     }
 
-    .menuIcon {
-      color: red;
+    .optionsIcon {
+      @include hover() {
+        cursor: pointer;
+      }
+    }
+
+    .optionsMenu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $bg-color-menu-light-blue;
+      height: 100vh;
+      width: 0;
+      transition: 0.2s all;
+    }
+
+    .open {
+      width: 100vw;
+      transition: 0.2s all;
     }
   }
 }
