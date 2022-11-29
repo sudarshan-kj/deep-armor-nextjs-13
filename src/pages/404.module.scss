@@ -1,7 +1,8 @@
 @import "src/styles/mixins.scss";
 .container {
   @include flex(center);
-  height: calc(100vh - 120px);
+  height: calc(100vh - 130px);
+  padding: 0 1.5rem;
 
   .errorMsgContainer {
     @include flex(center);
@@ -9,5 +10,6 @@
     border: 2px solid red;
     padding: 2.5rem;
     border-radius: 5px;
+    text-align: center;
   }
 }

@@ -13,6 +13,7 @@
   padding: 1rem;
   max-width: $max-window-width;
   margin: 0 auto;
+  position: relative;
 
   .logoContainer {
     margin-left: 1rem;
@@ -80,21 +81,23 @@
         cursor: pointer;
       }
     }
-
     .optionsMenu {
-      position: fixed;
-      top: 0;
+      position: absolute;
+      top: 90px;
       right: 0;
-      bottom: 0;
+      left: 0;
       background-color: $bg-color-menu-light-blue;
-      height: 100vh;
-      width: 0;
-      transition: 0.2s all;
+      height: calc(100vh - 180px);
+      box-shadow: 2px 4px 10px 0px #00000042;
+      padding: 5rem;
+      opacity: 0;
+      @include flex(space-between);
+      flex-direction: column;
+      font-size: 1.2rem;
     }
 
-    .open {
-      width: 100vw;
-      transition: 0.2s all;
+    .openOptions {
+      opacity: 0.97;
     }
   }
 }

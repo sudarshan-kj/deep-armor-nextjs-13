@@ -4,41 +4,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { services } from "./Solutions";
 
-const links: Array<{
-  id: number;
-  title: string;
-  linkPath: string;
-  selected?: boolean;
-}> = [
-  {
-    id: 0,
-    linkPath: "/solutions/gdpr-privacy-and-software-licensing",
-    title: "GDPR Privacy and Software Licensing",
-  },
-  {
-    id: 1,
-    linkPath: "/solutions/healthcare-iomt-and-medical-device-security",
-    title: "Healthcare Iomt and Medical Device Security",
-  },
-  {
-    id: 2,
-    linkPath: "/solutions/hardware-and-embedded-security",
-    title: "Hardware and Embedded Security",
-  },
-  {
-    id: 3,
-    linkPath: "/solutions/healthcare-iomt-and-medical-device-security",
-    title: "Healthcare Iomt and Medical Device Security",
-  },
-];
-
 const SolutionsLayout = ({ children }: any) => {
   const router = useRouter();
   /*link path is chosen and not id because it lets us use the pathname as the identifier when the component first mounts ( in this case loads ).
    Else we will have to loop through the list once more*/
-  const [selectedLink, setSelectedLink] = useState(
-    router.pathname || links[0].linkPath
-  );
+  const [selectedLink, setSelectedLink] = useState(router.pathname);
 
   useEffect(() => {
     /*when 'solutions' is clicked from nav bar, there is mismatch between what is shown as selected 

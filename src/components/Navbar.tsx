@@ -2,15 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.scss";
 import Logo from "src/assets/icons/logo.svg";
 import OptionsIcon from "src/assets/icons/options.svg";
+import CloseIcon from "src/assets/icons/close.svg";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 import { services, products } from "./Solutions";
 
 const Navbar = () => {
-  const handleContactClick = () => {
-    document?.querySelector("footer")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   const [isMediumScreen, setIsMediumScreen] = useState<boolean | null>(null);
   const isScreenWidthGreaterThan768px = useMediaQuery({
     query: "(min-width: 768px)",
@@ -24,8 +21,20 @@ const Navbar = () => {
     setIsMediumScreen(isScreenWidthGreaterThan768px);
   }, [isScreenWidthGreaterThan768px]);
 
+  useEffect(() => {
+    //prevent the body scrolling when the pop up is open
+    if (openOptions) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [openOptions]);
+
   const handleSolutionLinkClick = () => {
     setOpenSolutionsPopup(false);
+    setOpenOptions(false);
+  };
+
+  const handleContactClick = () => {
+    document?.querySelector("footer")?.scrollIntoView({ behavior: "smooth" });
+    setOpenOptions(false);
   };
 
   return (
@@ -40,14 +49,16 @@ const Navbar = () => {
           {isMediumScreen && (
             <>
               <div
-                onMouseEnter={() => setOpenSolutionsPopup(true)}
+                onMouseEnter={() => {
+                  if (!window.matchMedia("(hover: none)").matches) {
+                    setOpenSolutionsPopup(true);
+                  }
+                }}
                 onMouseLeave={() => setOpenSolutionsPopup(false)}
                 className={styles.solutionsActionItem}
               >
                 <h4>
-                  <Link href="/solutions/hardware-and-embedded-security">
-                    solutions
-                  </Link>
+                  <Link href="/solutions">solutions</Link>
                 </h4>
                 {openSolutionsPopup && (
                   <div className={styles.solutionsPopupMenu}>
@@ -98,19 +109,37 @@ const Navbar = () => {
           {isMediumScreen === false && (
             <div>
               <div
-                onClick={() => setOpenOptions(true)}
+                onClick={() => setOpenOptions((p) => !p)}
                 className={styles.optionsIcon}
               >
-                <OptionsIcon />
+                {!openOptions ? <OptionsIcon /> : <CloseIcon />}
               </div>
 
               <div
-                onClick={() => setOpenOptions(false)}
                 className={`${styles.optionsMenu} ${
-                  openOptions && styles.open
+                  openOptions && styles.openOptions
                 }`}
               >
-                <div></div>
+                <h1>
+                  <Link onClick={handleSolutionLinkClick} href="/solutions">
+                    solutions
+                  </Link>
+                </h1>
+                <h1>
+                  <Link
+                    onClick={handleSolutionLinkClick}
+                    target="_blank"
+                    href="https://medium.com/deep-armor"
+                  >
+                    blog
+                  </Link>
+                </h1>
+                <h1>
+                  <Link onClick={handleSolutionLinkClick} href="/about-us">
+                    about us
+                  </Link>
+                </h1>
+                <h1 onClick={handleContactClick}>contact us</h1>
               </div>
             </div>
           )}
