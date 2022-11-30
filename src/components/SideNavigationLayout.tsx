@@ -1,10 +1,20 @@
 import React, { useEffect, useState } from "react";
-import styles from "./SolutionsLayout.module.scss";
+import styles from "./SideNavigationLayout.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { services } from "./Solutions";
+import { SideNavigationItemType } from "src/types";
 
-const SolutionsLayout = ({ children }: any) => {
+interface ISideNavigationLayout {
+  children: React.ReactNode;
+  items: Array<SideNavigationItemType>;
+  header: string;
+}
+
+const SideNavigationLayout = ({
+  children,
+  items,
+  header,
+}: ISideNavigationLayout) => {
   const router = useRouter();
   /*link path is chosen and not id because it lets us use the pathname as the identifier when the component first mounts ( in this case loads ).
    Else we will have to loop through the list once more*/
@@ -22,25 +32,25 @@ const SolutionsLayout = ({ children }: any) => {
     <div className={styles.container}>
       <div className={styles.headerContainer}>
         <div className={styles.header}>
-          <h1>Our Services</h1>
+          <h1>{header}</h1>
         </div>
       </div>
       <div className={styles.navbarAndMainContentContainer}>
         <div className={styles.navbarAndMainContent}>
           <nav>
             <ul>
-              {services.map((service) => (
+              {items.map((item) => (
                 <li
-                  key={service.id}
+                  key={item.id}
                   className={
-                    service.linkPath === selectedLink ? styles.selectedLink : ""
+                    item.linkPath === selectedLink ? styles.selectedLink : ""
                   }
                 >
                   <Link
-                    onClick={() => setSelectedLink(service.linkPath)}
-                    href={service.linkPath}
+                    onClick={() => setSelectedLink(item.linkPath)}
+                    href={item.linkPath}
                   >
-                    {service.serviceName}
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -53,4 +63,4 @@ const SolutionsLayout = ({ children }: any) => {
   );
 };
 
-export default SolutionsLayout;
+export default SideNavigationLayout;

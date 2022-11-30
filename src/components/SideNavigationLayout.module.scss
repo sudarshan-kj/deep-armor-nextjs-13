@@ -21,49 +21,62 @@
     margin: 0 auto;
 
     .navbarAndMainContent {
-      margin: 1.5rem;
+      margin: 1rem;
       @include md-and-above {
         display: flex;
+        margin: 1.5rem;
       }
 
       nav {
         @include md-and-above {
+          position: sticky;
+          top: $top-nav-bar-height;
           max-width: 290px;
           border-right: 7px solid $item-border-light-blue;
         }
-        position: sticky;
-        top: $top-nav-bar-height;
         align-self: flex-start;
       }
 
       nav ul {
         list-style: none;
-
         padding: 0;
         display: flex;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
+        align-items: center;
+        @include md-and-above {
+          flex-direction: column;
+        }
       }
       nav li {
-        margin: 1rem;
-        padding: 0.6rem;
         font-weight: bold;
-        max-width: 100px;
-        font-size: 0.9rem;
+        max-width: 50%;
+        flex: 1 50%;
         @include md-and-above {
           font-size: initial;
-          max-width: initial;
+          min-width: 220px;
+          margin: 1rem;
+          flex: none;
         }
+        font-size: 0.9rem;
       }
       nav li a {
         text-decoration: none;
         color: #000;
-        &:hover {
+        display: inline-block;
+        @include hover() {
           color: $nav-hover-link-color;
+        }
+        padding: 0.5rem;
+      }
+
+      .selectedLink a {
+        @include md-and-below {
+          background: $bg-color-dark-blue;
+          color: #fff;
         }
       }
 
       .selectedLink {
-        box-shadow: 0 4px 0 $item-border-light-blue;
         @include md-and-above {
           box-shadow: -7px 0 0 $item-border-light-blue;
         }
@@ -72,6 +85,7 @@
       .mainContent {
         @include md-and-above {
           padding: 0 2rem;
+          flex: 1;
         }
       }
     }

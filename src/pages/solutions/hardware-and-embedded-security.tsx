@@ -1,13 +1,10 @@
-import SolutionsLayout from "src/components/SolutionsLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 import hardware from "src/assets/images/hardware.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const HardWareAndEmbeddedSecurity = () => {
   return (
-    <SolutionItemLayout
-      heading="Hardware and Embedded System Security"
-      image={hardware}
-    >
+    <div>
       <p>
         Ex eiusmod in et velit do ad ex culpa consectetur eu id minim ea.
         Incididunt consequat aliquip irure amet occaecat magna labore
@@ -24,12 +21,19 @@ const HardWareAndEmbeddedSecurity = () => {
         non cillum reprehenderit qui cupidatat laboris incididunt Lorem laboris
         elit nostrud quis.
       </p>
-    </SolutionItemLayout>
+    </div>
   );
 };
 
 HardWareAndEmbeddedSecurity.getLayout = (page: React.ReactElement) => (
-  <SolutionsLayout>{page}</SolutionsLayout>
+  <ServicesNavigationLayout>
+    <SolutionItemLayout
+      heading="Hardware and Embedded System Security"
+      image={hardware}
+    >
+      {page}
+    </SolutionItemLayout>
+  </ServicesNavigationLayout>
 );
 
 export default HardWareAndEmbeddedSecurity;

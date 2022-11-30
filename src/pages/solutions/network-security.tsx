@@ -1,10 +1,10 @@
-import SolutionsLayout from "src/components/SolutionsLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 import network from "src/assets/images/network.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const NetworkSecurity = () => {
   return (
-    <SolutionItemLayout heading="Network Security" image={network}>
+    <div>
       <p>
         Culpa incididunt laboris sint ad in ut. Excepteur culpa sit occaecat
         fugiat. Ex aute est ea ad sit sit aliqua eiusmod tempor qui sit aute ut.
@@ -20,12 +20,16 @@ const NetworkSecurity = () => {
         Exercitation elit anim nostrud sunt ipsum nisi reprehenderit fugiat in
         ad exercitation.
       </p>
-    </SolutionItemLayout>
+    </div>
   );
 };
 
 NetworkSecurity.getLayout = (page: React.ReactElement) => (
-  <SolutionsLayout>{page}</SolutionsLayout>
+  <ServicesNavigationLayout>
+    <SolutionItemLayout heading="Network Security" image={network}>
+      {page}
+    </SolutionItemLayout>
+  </ServicesNavigationLayout>
 );
 
 export default NetworkSecurity;

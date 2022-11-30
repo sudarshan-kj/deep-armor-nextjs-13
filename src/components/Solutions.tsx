@@ -12,6 +12,7 @@ import MedtechIcon from "src/assets/icons/medtech-vulnerability-calculator.svg";
 import CloudCostOptimizationIcon from "src/assets/icons/cloud-cost-optimization-recon.svg";
 import CloudSecurityGauntletIcon from "src/assets/icons/cloud-security-gauntlet.svg";
 import Link from "next/link";
+import { SideNavigationItemType } from "src/types";
 
 const ServiceItem = ({
   label,
@@ -49,88 +50,82 @@ const ProductItem = ({
   );
 };
 
-interface ServiceType {
-  id: number;
-  serviceName: string;
+interface SolutionType extends SideNavigationItemType {
   icon: React.ReactSVGElement;
-  linkPath: string;
+  isProductSecurityAssessment?: boolean;
 }
 
-const productSecurityAssessments: Array<ServiceType> = [
+export const services: Array<SolutionType> = [
   {
     id: 0,
-    serviceName: "Hardware & Embedded System Security",
+    name: "Hardware & Embedded System Security",
     icon: HardwareIcon,
     linkPath: "/solutions/hardware-and-embedded-security",
+    isProductSecurityAssessment: true,
   },
   {
     id: 1,
-    serviceName: "Healthcare, IoMT and Medical Device Security",
+    name: "Healthcare, IoMT and Medical Device Security",
     icon: DeviceIcon,
     linkPath: "/solutions/healthcare-iomt-and-medical-device-security",
+    isProductSecurityAssessment: true,
   },
   {
     id: 2,
-    serviceName: "Web, Mobile & Cloud Security",
+    name: "Web, Mobile & Cloud Security",
     icon: WebMobileCloudIcon,
     linkPath: "/solutions/web-mobile-and-cloud-security",
+    isProductSecurityAssessment: true,
   },
   {
     id: 3,
-    serviceName: "Network Security",
+    name: "Network Security",
     icon: NetworkIcon,
     linkPath: "/solutions/network-security",
+    isProductSecurityAssessment: true,
   },
-];
-
-const nonProductSecurityServices: Array<ServiceType> = [
   {
     id: 4,
-    serviceName: "Secure Architecture and Design Consulting",
+    name: "Secure Architecture and Design Consulting",
     icon: ConsultingIcon,
     linkPath: "/solutions/secure-architecture-and-design-consulting",
   },
   {
     id: 5,
-    serviceName: "GDPR, Privacy and Software Licensing",
+    name: "GDPR, Privacy and Software Licensing",
     icon: GdprIcon,
     linkPath: "/solutions/gdpr-privacy-and-software-licensing",
   },
   {
     id: 6,
-    serviceName: "Security Trainings",
+    name: "Security Trainings",
     icon: TrainingIcon,
     linkPath: "/solutions/security-trainings",
   },
   {
     id: 7,
-    serviceName: "Virtual CISO Services for Products",
+    name: "Virtual CISO Services for Products",
     icon: VirtualCisoIcon,
     linkPath: "/solutions/virtual-ciso-for-products",
   },
 ];
 
-export const services = [
-  ...productSecurityAssessments,
-  ...nonProductSecurityServices,
-];
-
 export const products: Array<ProductType> = [
   {
     id: 0,
-    productName: "Cloud Security (Gauntlet)",
+    name: "Cloud Security (Gauntlet)",
     icon: CloudSecurityGauntletIcon,
     linkPath: "https://deeparmor.com/",
   },
   {
     id: 1,
-    productName: "Cloud Cost Optimization (Recon)",
+    name: "Cloud Cost Optimization (Recon)",
     icon: CloudCostOptimizationIcon,
     linkPath: "https://deeparmor.com/",
   },
   {
     id: 2,
-    productName: "Medtech Vulnerability Scoring",
+    name: "Medtech Vulnerability Scoring",
     icon: MedtechIcon,
     linkPath: "https://deeparmor.com/",
   },
@@ -143,25 +138,29 @@ const Services = () => {
       <div className={styles.psAssessmentsContainer}>
         <h4 className={styles.heading}>Product Security Assessments</h4>
         <div className={styles.servicesItemsContainer}>
-          {productSecurityAssessments.map((service) => (
+          {services
+            .filter((s) => s?.isProductSecurityAssessment)
+            .map((service) => (
+              <ServiceItem
+                key={service.id}
+                label={service.name}
+                Icon={service.icon}
+                linkPath={service.linkPath}
+              />
+            ))}
+        </div>
+      </div>
+      <div className={styles.servicesItemsContainer}>
+        {services
+          .filter((s) => !s?.isProductSecurityAssessment)
+          .map((service) => (
             <ServiceItem
               key={service.id}
-              label={service.serviceName}
+              label={service.name}
               Icon={service.icon}
               linkPath={service.linkPath}
             />
           ))}
-        </div>
-      </div>
-      <div className={styles.servicesItemsContainer}>
-        {nonProductSecurityServices.map((service) => (
-          <ServiceItem
-            key={service.id}
-            label={service.serviceName}
-            Icon={service.icon}
-            linkPath={service.linkPath}
-          />
-        ))}
       </div>
     </div>
   );
@@ -169,7 +168,7 @@ const Services = () => {
 
 interface ProductType {
   id: number;
-  productName: string;
+  name: string;
   icon: React.ReactSVGElement;
   linkPath: string;
 }
@@ -182,7 +181,7 @@ const Products = () => {
         {products.map((product) => (
           <ProductItem
             key={product.id}
-            label={product.productName}
+            label={product.name}
             Icon={product.icon}
             linkPath={product.linkPath}
           />

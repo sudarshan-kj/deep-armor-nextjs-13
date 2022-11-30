@@ -1,0 +1,14 @@
+.container {
+  font-size: 1.1rem;
+  .aboutUsImage {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    float: right;
+    margin: 0 0 1rem 1rem;
+    img {
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}

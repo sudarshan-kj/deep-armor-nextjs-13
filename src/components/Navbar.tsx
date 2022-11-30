@@ -70,7 +70,7 @@ const Navbar = () => {
                             onClick={handleSolutionLinkClick}
                             href={service.linkPath}
                           >
-                            <li>{service.serviceName}</li>
+                            <li>{service.name}</li>
                           </Link>
                         ))}
                       </ul>
@@ -84,7 +84,7 @@ const Navbar = () => {
                             target="_blank"
                             href={product.linkPath}
                           >
-                            <li>{product.productName}</li>
+                            <li>{product.name}</li>
                           </Link>
                         ))}
                       </ul>

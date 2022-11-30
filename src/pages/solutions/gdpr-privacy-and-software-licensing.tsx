@@ -1,13 +1,10 @@
-import SolutionsLayout from "src/components/SolutionsLayout";
 import signature from "src/assets/images/signature.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 
 const GdprPrivacyAndSoftwareLicensing = () => {
   return (
-    <SolutionItemLayout
-      heading="GDPR, Privacy and Software Licensing"
-      image={signature}
-    >
+    <div>
       <p>
         Culpa incididunt laboris sint ad in ut. Excepteur culpa sit occaecat
         fugiat. Ex aute est ea ad sit sit aliqua eiusmod tempor qui sit aute ut.
@@ -26,11 +23,18 @@ const GdprPrivacyAndSoftwareLicensing = () => {
         deserunt ex elit deserunt ullamco voluptate cillum sint eiusmod. Irure
         sit occaecat sunt excepteur.
       </p>
-    </SolutionItemLayout>
+    </div>
   );
 };
 GdprPrivacyAndSoftwareLicensing.getLayout = (page: React.ReactElement) => (
-  <SolutionsLayout>{page}</SolutionsLayout>
+  <ServicesNavigationLayout>
+    <SolutionItemLayout
+      heading="GDPR, Privacy and Software Licensing"
+      image={signature}
+    >
+      {page}
+    </SolutionItemLayout>
+  </ServicesNavigationLayout>
 );
 
 export default GdprPrivacyAndSoftwareLicensing;

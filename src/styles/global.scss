@@ -24,6 +24,10 @@ body {
   margin: 0;
 }
 
+body main {
+  min-height: calc(100vh - 308px);
+}
+
 @font-face {
   font-family: SegoeUI;
   src: local("Segoe UI Light"),

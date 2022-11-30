@@ -1,10 +1,10 @@
-import SolutionsLayout from "src/components/SolutionsLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 import training from "src/assets/images/training.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const SecurityTrainings = () => {
   return (
-    <SolutionItemLayout heading="Security Trainings" image={training}>
+    <div>
       <p>
         Culpa incididunt laboris sint ad in ut. Excepteur culpa sit occaecat
         fugiat. Ex aute est ea ad sit sit aliqua eiusmod tempor qui sit aute ut.
@@ -20,12 +20,17 @@ const SecurityTrainings = () => {
         irure id reprehenderit deserunt amet cillum. Deserunt dolore duis minim
         est id. Ex nisi do officia proident voluptate.
       </p>
-    </SolutionItemLayout>
+    </div>
   );
 };
 
 SecurityTrainings.getLayout = (page: React.ReactElement) => (
-  <SolutionsLayout>{page}</SolutionsLayout>
+  <ServicesNavigationLayout>
+    {" "}
+    <SolutionItemLayout heading="Security Trainings" image={training}>
+      {page}{" "}
+    </SolutionItemLayout>
+  </ServicesNavigationLayout>
 );
 
 export default SecurityTrainings;

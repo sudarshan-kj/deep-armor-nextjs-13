@@ -1,13 +1,10 @@
-import SolutionsLayout from "src/components/SolutionsLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 import code from "src/assets/images/code.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const SecureArchitectureAndDesignConsulting = () => {
   return (
-    <SolutionItemLayout
-      heading="Secure Architecture and Design Consulting"
-      image={code}
-    >
+    <div>
       <p>
         Nisi in magna ipsum est officia. Dolor sit proident mollit ut velit
         occaecat. Cupidatat deserunt cupidatat sunt labore nulla ex consectetur
@@ -23,12 +20,21 @@ const SecureArchitectureAndDesignConsulting = () => {
         non cillum reprehenderit qui cupidatat laboris incididunt Lorem laboris
         elit nostrud quis.
       </p>
-    </SolutionItemLayout>
+    </div>
   );
 };
 
 SecureArchitectureAndDesignConsulting.getLayout = (
   page: React.ReactElement
-) => <SolutionsLayout>{page}</SolutionsLayout>;
+) => (
+  <ServicesNavigationLayout>
+    <SolutionItemLayout
+      heading="Secure Architecture and Design Consulting"
+      image={code}
+    >
+      {page}
+    </SolutionItemLayout>
+  </ServicesNavigationLayout>
+);
 
 export default SecureArchitectureAndDesignConsulting;

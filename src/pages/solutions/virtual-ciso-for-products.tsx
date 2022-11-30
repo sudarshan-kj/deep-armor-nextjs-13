@@ -1,10 +1,10 @@
-import SolutionsLayout from "src/components/SolutionsLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 import ciso from "src/assets/images/ciso.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const VirtualCisoForProducts = () => {
   return (
-    <SolutionItemLayout heading="Virtual CISO for Products" image={ciso}>
+    <div>
       <p>
         Culpa incididunt laboris sint ad in ut. Excepteur culpa sit occaecat
         fugiat. Ex aute est ea ad sit sit aliqua eiusmod tempor qui sit aute ut.
@@ -115,12 +115,16 @@ const VirtualCisoForProducts = () => {
         non cillum reprehenderit qui cupidatat laboris incididunt Lorem laboris
         elit nostrud quis.
       </p>
-    </SolutionItemLayout>
+    </div>
   );
 };
 
 VirtualCisoForProducts.getLayout = (page: React.ReactElement) => (
-  <SolutionsLayout>{page}</SolutionsLayout>
+  <ServicesNavigationLayout>
+    <SolutionItemLayout heading="Virtual CISO for Products" image={ciso}>
+      {page}
+    </SolutionItemLayout>
+  </ServicesNavigationLayout>
 );
 
 export default VirtualCisoForProducts;

@@ -1,10 +1,10 @@
-import SolutionsLayout from "src/components/SolutionsLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 import mobile from "src/assets/images/mobile.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const WebMobileAndCloudSecurity = () => {
   return (
-    <SolutionItemLayout heading="Web, mobile and Cloud Security" image={mobile}>
+    <div>
       <p>
         Nisi in magna ipsum est officia. Dolor sit proident mollit ut velit
         occaecat. Cupidatat deserunt cupidatat sunt labore nulla ex consectetur
@@ -20,12 +20,16 @@ const WebMobileAndCloudSecurity = () => {
         non cillum reprehenderit qui cupidatat laboris incididunt Lorem laboris
         elit nostrud quis.
       </p>
-    </SolutionItemLayout>
+    </div>
   );
 };
 
 WebMobileAndCloudSecurity.getLayout = (page: React.ReactElement) => (
-  <SolutionsLayout>{page}</SolutionsLayout>
+  <ServicesNavigationLayout>
+    <SolutionItemLayout heading="Web, mobile and Cloud Security" image={mobile}>
+      {page}
+    </SolutionItemLayout>
+  </ServicesNavigationLayout>
 );
 
 export default WebMobileAndCloudSecurity;

@@ -94,10 +94,12 @@
       @include flex(space-between);
       flex-direction: column;
       font-size: 1.2rem;
+      display: none;
     }
 
     .openOptions {
       opacity: 0.97;
+      display: flex;
     }
   }
 }

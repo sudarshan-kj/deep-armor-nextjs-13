@@ -1,13 +1,10 @@
-import SolutionsLayout from "src/components/SolutionsLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 import healthcare from "src/assets/images/healthcare.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 
 const HealthcareIomtAndMedicalDeviceSecurity = () => {
   return (
-    <SolutionItemLayout
-      heading="Healthcare, IoMT and Medical Device Security"
-      image={healthcare}
-    >
+    <div>
       <p>
         Ullamco aliquip elit excepteur amet. Mollit cupidatat id excepteur esse
         ad sint nostrud cillum mollit cupidatat enim officia. Dolore nulla
@@ -26,12 +23,21 @@ const HealthcareIomtAndMedicalDeviceSecurity = () => {
         non cillum reprehenderit qui cupidatat laboris incididunt Lorem laboris
         elit nostrud quis.
       </p>
-    </SolutionItemLayout>
+    </div>
   );
 };
 
 HealthcareIomtAndMedicalDeviceSecurity.getLayout = (
   page: React.ReactElement
-) => <SolutionsLayout>{page}</SolutionsLayout>;
+) => (
+  <ServicesNavigationLayout>
+    <SolutionItemLayout
+      heading="Healthcare, IoMT and Medical Device Security"
+      image={healthcare}
+    >
+      {page}
+    </SolutionItemLayout>
+  </ServicesNavigationLayout>
+);
 
 export default HealthcareIomtAndMedicalDeviceSecurity;

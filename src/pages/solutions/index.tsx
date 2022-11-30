@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import SolutionsLayout from "src/components/SolutionsLayout";
+import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
 import { services } from "src/components/Solutions";
 
 const Solutions = () => {
@@ -11,7 +11,7 @@ const Solutions = () => {
 };
 
 Solutions.getLayout = (page: React.ReactElement) => (
-  <SolutionsLayout>{page}</SolutionsLayout>
+  <ServicesNavigationLayout>{page}</ServicesNavigationLayout>
 );
 
 export default Solutions;
