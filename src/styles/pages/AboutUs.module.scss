@@ -12,3 +12,8 @@
     }
   }
 }
+
+.leadershipContainer {
+  @include flex(center);
+  flex-flow: row wrap;
+}

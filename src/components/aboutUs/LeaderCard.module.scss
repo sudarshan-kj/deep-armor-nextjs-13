@@ -1,0 +1,12 @@
+.card {
+  flex: 1 120px;
+  .thumbnail {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
