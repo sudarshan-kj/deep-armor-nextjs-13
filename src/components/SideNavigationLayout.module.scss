@@ -31,7 +31,6 @@
         @include md-and-above {
           position: sticky;
           top: $top-nav-bar-height;
-          max-width: 290px;
           border-right: 7px solid $item-border-light-blue;
         }
         align-self: flex-start;
@@ -49,8 +48,7 @@
       }
       nav li {
         font-weight: bold;
-        max-width: 50%;
-        flex: 1 50%;
+        width: 50%;
         @include md-and-above {
           font-size: initial;
           min-width: 220px;

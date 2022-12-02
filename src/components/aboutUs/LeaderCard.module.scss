@@ -1,12 +1,43 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
 .card {
-  flex: 1 120px;
-  .thumbnail {
-    height: 150px;
-    width: 150px;
-    position: relative;
-    img {
-      object-fit: cover;
-      border-radius: 50%;
+  border-radius: 5px;
+  background: $bg-color-menu-light-blue;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+
+  .thumbnailContainer {
+    @include flex(center);
+    .thumbnail {
+      height: 100px;
+      width: 100px;
+      position: relative;
+      img {
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .contentContainer {
+    margin-top: 1rem;
+    h3,
+    h4,
+    h5 {
+      margin: 0.5rem;
+    }
+
+    h5 {
+      display: inline-block;
+    }
+    h4 {
+      font-size: 1.1rem;
     }
   }
 }
