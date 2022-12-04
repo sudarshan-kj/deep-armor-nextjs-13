@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import styles from "./LeaderCard.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import LinkedinIcon from "src/assets/icons/linkedin.svg";
 
 interface ILeaderCard {
   thumbnail: any;
@@ -27,9 +28,11 @@ const LeaderCard: FC<ILeaderCard> = ({
       </div>
       <div className={styles.contentContainer}>
         <h3>{name}</h3>
-        <div>
+        <div className={styles.designation}>
           <h5>{designation}</h5>
-          <Link href={linkedinLink}>Linkedin Link</Link>
+          <Link target="_blank" href={linkedinLink}>
+            <LinkedinIcon />
+          </Link>
         </div>
         <h4>{description}</h4>
       </div>

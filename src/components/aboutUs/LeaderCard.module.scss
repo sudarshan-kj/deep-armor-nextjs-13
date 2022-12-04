@@ -15,8 +15,8 @@
   .thumbnailContainer {
     @include flex(center);
     .thumbnail {
-      height: 100px;
-      width: 100px;
+      height: 150px;
+      width: 150px;
       position: relative;
       img {
         object-fit: cover;
@@ -27,17 +27,22 @@
 
   .contentContainer {
     margin-top: 1rem;
-    h3,
-    h4,
-    h5 {
-      margin: 0.5rem;
-    }
 
-    h5 {
+    .designation {
+      margin: 0.5rem;
+      @include flex(center);
+      align-items: flex-start;
+    }
+    .designation > h5 {
       display: inline-block;
+      color: $nav-hover-link-color;
+      margin-right: 0.5rem;
     }
     h4 {
-      font-size: 1.1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #5a5a5a;
+      margin-top: 0.5rem;
     }
   }
 }

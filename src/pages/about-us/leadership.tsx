@@ -3,6 +3,8 @@ import AboutUsNavigationLayout from "src/components/AboutUsNavigationLayout";
 import styles from "src/styles/pages/AboutUs.module.scss";
 import LeaderCard from "src/components/aboutUs/LeaderCard";
 import hardware from "src/assets/images/hardware.jpg";
+import sumanth from "src/assets/images/man-sumanth.png";
+import sridhar from "src/assets/images/man-sridhar.jpg";
 
 type LeadersType = {
   id: number;
@@ -16,21 +18,21 @@ type LeadersType = {
 const leaders: LeadersType[] = [
   {
     id: 0,
-    thumbnail: hardware,
+    thumbnail: sumanth,
     name: "Sumanth",
-    designation: "CEO",
+    designation: "Founder and CEO",
     linkedinLink: "https://www.deeparmor.com",
     description:
-      "Ipsum voluptate ad enim commodo ad sit deserunt duis. Cupidatat sit sit veniam aute sunt deserunt nulla consequat laboris. Cillum nostrud sint do labore aliqua irure ullamco reprehenderit consequat. Eu elit proident tempor sint est et anim sunt officia excepteur.",
+      "Ipsum voluptate ad enim commodo ad sit deserunt duis. Cupidatat sit sit veniam aute sunt deserunt nulla consequat laboris. ",
   },
   {
     id: 1,
-    thumbnail: hardware,
-    name: "Srinivas",
-    designation: "Trust and Safety Manager",
+    thumbnail: sridhar,
+    name: "Sridhar",
+    designation: "Advisor",
     linkedinLink: "https://www.deeparmor.com",
     description:
-      "Ex eiusmod deserunt pariatur deserunt labore do consectetur ullamco. Aute dolor magna magna id dolor velit in anim eu magna sit qui anim aute. Culpa anim occaecat eiusmod ad deserunt ipsum officia esse ullamco sunt in. Reprehenderit eu cupidatat irure veniam et elit ipsum qui exercitation.",
+      "Ex eiusmod deserunt pariatur deserunt labore do consectetur ullamco. Aute dolor magna magna id dolor velit in anim eu magna sit qui anim aute. ",
   },
   {
     id: 2,
@@ -39,7 +41,7 @@ const leaders: LeadersType[] = [
     designation: "Security Expert",
     linkedinLink: "https://www.deeparmor.com",
     description:
-      "Enim esse incididunt in labore. Sunt do sint proident ex aliquip reprehenderit aliquip labore et Lorem. Fugiat dolore sunt consectetur amet mollit do in exercitation Lorem. In culpa consequat nulla mollit ad. Lorem veniam est velit irure tempor ut dolore sunt sunt ea.",
+      "Enim esse incididunt in labore. Sunt do sint proident ex aliquip reprehenderit aliquip labore et Lorem. ",
   },
   {
     id: 3,
@@ -48,7 +50,7 @@ const leaders: LeadersType[] = [
     designation: "Developer",
     linkedinLink: "https://www.deeparmor.com",
     description:
-      "Sit excepteur officia ipsum tempor culpa aliquip laboris commodo quis veniam. Culpa voluptate consequat nisi fugiat quis. Dolor ut voluptate aute laboris laboris exercitation elit adipisicing veniam consequat ex id fugiat aute. Quis incididunt exercitation mollit Lorem cillum amet. Aliqua esse sunt ut duis Lorem id do laboris.",
+      "Sit excepteur officia ipsum tempor culpa aliquip laboris commodo quis veniam. Culpa voluptate consequat nisi fugiat quis. ",
   },
 ];
 
