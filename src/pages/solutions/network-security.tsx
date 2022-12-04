@@ -1,4 +1,4 @@
-import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
+import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
 import network from "src/assets/images/network.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 

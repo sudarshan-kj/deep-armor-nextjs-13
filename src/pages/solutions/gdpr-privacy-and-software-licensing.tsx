@@ -1,6 +1,6 @@
 import signature from "src/assets/images/signature.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
-import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
+import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
 
 const GdprPrivacyAndSoftwareLicensing = () => {
   return (

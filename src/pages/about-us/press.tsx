@@ -1,5 +1,5 @@
-import AboutUsNavigationLayout from "src/components/AboutUsNavigationLayout";
-import AboutUsItemLayout from "src/components/AboutUsItemLayout";
+import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
+import AboutUsItemLayout from "src/layouts/AboutUsItemLayout";
 
 const Press = () => {
   return <div>Press</div>;

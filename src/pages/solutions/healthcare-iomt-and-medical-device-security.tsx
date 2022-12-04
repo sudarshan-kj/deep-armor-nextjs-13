@@ -1,4 +1,4 @@
-import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
+import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
 import healthcare from "src/assets/images/healthcare.jpg";
 import SolutionItemLayout from "src/components/SolutionItemLayout";
 

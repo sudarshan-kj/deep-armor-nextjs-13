@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUsNavigationLayout from "src/components/AboutUsNavigationLayout";
+import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
 import styles from "src/styles/pages/AboutUs.module.scss";
 import spiralSteps from "src/assets/images/spiral-steps.jpg";
 import Image from "next/image";

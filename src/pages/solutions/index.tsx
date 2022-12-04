@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import ServicesNavigationLayout from "src/components/ServicesNavigationLayout";
+import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
 import { services } from "src/components/Solutions";
 
 const Solutions = () => {

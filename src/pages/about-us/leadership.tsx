@@ -1,5 +1,5 @@
-import AboutUsItemLayout from "src/components/AboutUsItemLayout";
-import AboutUsNavigationLayout from "src/components/AboutUsNavigationLayout";
+import AboutUsItemLayout from "src/layouts/AboutUsItemLayout";
+import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
 import styles from "src/styles/pages/AboutUs.module.scss";
 import LeaderCard from "src/components/aboutUs/LeaderCard";
 import hardware from "src/assets/images/hardware.jpg";

@@ -1,5 +1,5 @@
 import "src/styles/global.scss";
-import MainLayout from "../components/MainLayout";
+import MainLayout from "../layouts/MainLayout";
 import { Outfit } from "@next/font/google";
 
 const outfit = Outfit({ subsets: ["latin"] });
