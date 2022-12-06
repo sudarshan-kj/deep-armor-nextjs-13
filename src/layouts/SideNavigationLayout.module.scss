@@ -44,6 +44,7 @@
         align-items: center;
         @include md-and-above {
           flex-direction: column;
+          max-width: 240px;
         }
       }
       nav li {
@@ -51,9 +52,8 @@
         width: 50%;
         @include md-and-above {
           font-size: initial;
-          min-width: 220px;
           margin: 0.7rem;
-          flex: none;
+          min-width: 220px;
         }
         font-size: 0.9rem;
       }

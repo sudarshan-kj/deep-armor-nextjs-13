@@ -1,4 +1,10 @@
+@import "src/styles/mixins.scss";
+
 .container {
+  @include md-and-below {
+    margin-top: 2rem;
+  }
+
   h2 {
     text-align: center;
     text-transform: uppercase;
