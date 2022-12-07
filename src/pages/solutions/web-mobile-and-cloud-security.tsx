@@ -1,6 +1,6 @@
 import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
 import mobile from "src/assets/images/mobile.jpg";
-import SolutionItemLayout from "src/components/SolutionItemLayout";
+import SolutionItemLayout from "src/layouts/SolutionItemLayout";
 
 const WebMobileAndCloudSecurity = () => {
   return (

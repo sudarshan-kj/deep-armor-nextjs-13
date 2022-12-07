@@ -1,6 +1,6 @@
 import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
 import hardware from "src/assets/images/hardware.jpg";
-import SolutionItemLayout from "src/components/SolutionItemLayout";
+import SolutionItemLayout from "src/layouts/SolutionItemLayout";
 
 const HardWareAndEmbeddedSecurity = () => {
   return (

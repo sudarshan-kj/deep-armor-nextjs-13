@@ -1,6 +1,6 @@
 import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
 import ciso from "src/assets/images/ciso.jpg";
-import SolutionItemLayout from "src/components/SolutionItemLayout";
+import SolutionItemLayout from "src/layouts/SolutionItemLayout";
 
 const VirtualCisoForProducts = () => {
   return (

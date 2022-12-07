@@ -1,6 +1,6 @@
 import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
 import training from "src/assets/images/training.jpg";
-import SolutionItemLayout from "src/components/SolutionItemLayout";
+import SolutionItemLayout from "src/layouts/SolutionItemLayout";
 
 const SecurityTrainings = () => {
   return (

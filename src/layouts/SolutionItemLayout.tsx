@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./SolutionItem.module.scss";
+import styles from "./SolutionItemLayout.module.scss";
 
 interface ISolutionItemLayout {
   heading: string;
