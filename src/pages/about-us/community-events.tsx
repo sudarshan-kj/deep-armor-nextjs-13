@@ -8,29 +8,20 @@ import { CommunityEventType } from "src/types";
 const communityEvents: CommunityEventType[] = [
   {
     id: 0,
-    name: "Black Hat Conference",
+    name: "Hill cleaning",
     description:
-      "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut. Id veniam deserunt fugiat sunt aliquip minim pariatur amet esse. Adipisicing aliquip laboris aliquip ad excepteur.",
+      "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut.",
     location: "Las Vegas",
     date: "2019",
     image: hardware,
   },
   {
     id: 1,
-    name: "Javascript Conference",
+    name: "Orphanage Visit",
     description:
-      "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut. Id veniam deserunt fugiat sunt aliquip minim pariatur amet esse. Adipisicing aliquip laboris aliquip ad excepteur.",
+      "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut. ",
     location: "Bengaluru",
     date: "2022",
-    image: hardware,
-  },
-  {
-    id: 2,
-    name: "Python Conference",
-    description:
-      "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut. Id veniam deserunt fugiat sunt aliquip minim pariatur amet esse. Adipisicing aliquip laboris aliquip ad excepteur.",
-    location: "New Delhi",
-    date: "2021",
     image: hardware,
   },
 ];

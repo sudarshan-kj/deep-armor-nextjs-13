@@ -3,6 +3,7 @@ import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
 import styles from "src/styles/pages/AboutUs.module.scss";
 import spiralSteps from "src/assets/images/spiral-steps.jpg";
 import Image from "next/image";
+import AboutUsItemLayout from "src/layouts/AboutUsItemLayout";
 
 export const aboutUsItems = [
   {
@@ -55,7 +56,9 @@ const AboutUs = () => {
 };
 
 AboutUs.getLayout = (page: React.ReactElement) => (
-  <AboutUsNavigationLayout>{page}</AboutUsNavigationLayout>
+  <AboutUsNavigationLayout>
+    <AboutUsItemLayout header="About Us">{page}</AboutUsItemLayout>
+  </AboutUsNavigationLayout>
 );
 
 export default AboutUs;

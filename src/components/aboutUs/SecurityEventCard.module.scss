@@ -1,0 +1,58 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+$img-width: 23%;
+
+.card {
+  @include flex(flex-end);
+  align-items: flex-start;
+  border-radius: 10px;
+  background: $bg-color-card;
+  min-height: 180px;
+  margin: 2rem 0;
+  position: relative;
+  .image {
+    height: 100%;
+    width: $img-width;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    img {
+      object-fit: cover;
+      border-radius: 10px 0 0px 10px;
+    }
+  }
+  .content {
+    width: calc(100% - $img-width);
+    padding: 1rem;
+    .titleBar {
+      @include flex(space-between);
+      flex-wrap: wrap;
+      color: $nav-hover-link-color;
+      .mainTitle {
+        color: #000;
+      }
+      .metaData {
+        @include md-and-below {
+          margin-top: 1rem;
+        }
+        @include flex(flex-start);
+        .location {
+          @include flex(flex-start);
+        }
+        .date {
+          @include flex(flex-start);
+          margin: 0 1rem;
+        }
+        h5 {
+          margin-left: 5px;
+        }
+      }
+    }
+    .description {
+      margin-top: 1rem;
+      color: grey;
+    }
+  }
+}
