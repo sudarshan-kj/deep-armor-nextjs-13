@@ -11,7 +11,7 @@ const communityEvents: CommunityEventType[] = [
     name: "Hill cleaning",
     description:
       "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut.",
-    location: "Las Vegas",
+    location: "Nandi Hills",
     date: "2019",
     image: hardware,
   },

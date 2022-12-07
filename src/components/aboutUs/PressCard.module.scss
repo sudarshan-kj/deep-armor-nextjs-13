@@ -1,0 +1,30 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+.card {
+  padding: 1.5rem;
+  border: 3px solid $item-border-light-blue;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+
+  .titleBar {
+    @include flex(space-between);
+    flex-wrap: wrap;
+
+    .date {
+      @include flex(center);
+      h5 {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  a {
+    display: inline-block;
+    background: $link-button-bg-color;
+    padding: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+  }
+}

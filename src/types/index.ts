@@ -20,3 +20,11 @@ export type CommunityEventType = {
 };
 
 export interface SecurityEventType extends CommunityEventType {}
+
+export type PressType = {
+  id: number;
+  name: string;
+  description: string;
+  date: string;
+  link: string;
+};
