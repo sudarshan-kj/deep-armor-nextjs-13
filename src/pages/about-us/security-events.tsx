@@ -81,12 +81,14 @@ const SecurityEvents = () => {
         <SecurityEventCard {...event} />
       ))}
       <h2>Conferences given at</h2>
-      <div className={styles.conferenceLogos}>
-        {conferenceLogos.map((logo) => (
-          <div className={styles.logo}>
-            <Image src={logo} fill={true} alt="logo image" />
-          </div>
-        ))}
+      <div className={styles.logosContainer}>
+        <div className={styles.conferenceLogos}>
+          {conferenceLogos.map((logo) => (
+            <div className={styles.logo}>
+              <Image src={logo} fill={true} alt="logo image" />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -25,23 +25,35 @@
   h2 {
     margin: 2rem 0;
   }
-  .conferenceLogos {
-    padding: 2rem;
-    background-color: $bg-color-card;
-    @include flex(center);
-    flex-wrap: wrap;
-    .logo {
-      height: 50px;
-      width: 50px;
-      @include md-and-above {
-        height: 80px;
-        width: 80px;
-      }
-      position: relative;
-      margin: 1rem;
-      img {
-        object-fit: contain;
+
+  .logosContainer {
+    .conferenceLogos {
+      padding: 2rem;
+      background-color: $bg-color-card;
+      flex-wrap: wrap;
+      @include flex(center);
+      .logo {
+        height: 50px;
+        width: 50px;
+        @include md-and-above {
+          height: 80px;
+          width: 80px;
+        }
+        position: relative;
+        margin: 1rem;
+        img {
+          object-fit: contain;
+        }
       }
     }
+  }
+}
+
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
   }
 }
