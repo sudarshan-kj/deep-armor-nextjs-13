@@ -30,7 +30,7 @@ const LeaderCard: FC<ILeaderCard> = ({
         <h3>{name}</h3>
         <div className={styles.designation}>
           <h5>{designation}</h5>
-          <Link target="_blank" href={linkedinLink}>
+          <Link target="_blank" rel="noreferrer" href={linkedinLink}>
             <LinkedinIcon />
           </Link>
         </div>

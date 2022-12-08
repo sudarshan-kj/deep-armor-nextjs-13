@@ -58,7 +58,7 @@ const Leadership = () => {
   return (
     <div className={styles.leadershipContainer}>
       {leaders.map((leader) => (
-        <LeaderCard {...leader} />
+        <LeaderCard key={leader.id} {...leader} />
       ))}
     </div>
   );

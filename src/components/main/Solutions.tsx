@@ -43,7 +43,12 @@ const ProductItem = ({
   linkPath: string;
 }) => {
   return (
-    <Link target="_blank" href={linkPath} className={styles.productItem}>
+    <Link
+      target="_blank"
+      href={linkPath}
+      rel="noreferrer"
+      className={styles.productItem}
+    >
       <Icon />
       <p className={styles.label}>{label}</p>
     </Link>

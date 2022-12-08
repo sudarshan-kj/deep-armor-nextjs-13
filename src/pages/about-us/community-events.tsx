@@ -30,7 +30,7 @@ const CommunityEvents = () => {
   return (
     <div>
       {communityEvents.map((event) => (
-        <CommunityEventCard {...event} />
+        <CommunityEventCard key={event.id} {...event} />
       ))}
     </div>
   );

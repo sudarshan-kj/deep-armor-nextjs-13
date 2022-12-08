@@ -26,7 +26,7 @@ const Press = () => {
   return (
     <div>
       {pressItems.map((press) => (
-        <PressCard {...press} />
+        <PressCard key={press.id} {...press} />
       ))}
     </div>
   );

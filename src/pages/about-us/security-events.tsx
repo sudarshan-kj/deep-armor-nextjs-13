@@ -78,7 +78,7 @@ const SecurityEvents = () => {
   return (
     <div className={styles.securityEventsContainer}>
       {securityEvents.map((event) => (
-        <SecurityEventCard {...event} />
+        <SecurityEventCard key={event.id} {...event} />
       ))}
       <h2>Conferences given at</h2>
       <div className={styles.logosContainer}>

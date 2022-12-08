@@ -67,6 +67,7 @@ const Navbar = () => {
                       <ul>
                         {services.map((service) => (
                           <Link
+                            key={service.id}
                             onClick={handleSolutionLinkClick}
                             href={service.linkPath}
                           >
@@ -83,6 +84,7 @@ const Navbar = () => {
                             onClick={handleSolutionLinkClick}
                             target="_blank"
                             href={product.linkPath}
+                            rel="noreferrer"
                           >
                             <li>{product.name}</li>
                           </Link>
@@ -94,7 +96,11 @@ const Navbar = () => {
               </div>
 
               <h4>
-                <Link target="_blank" href="https://medium.com/deep-armor">
+                <Link
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://medium.com/deep-armor"
+                >
                   blog
                 </Link>
               </h4>
@@ -130,6 +136,7 @@ const Navbar = () => {
                     onClick={handleSolutionLinkClick}
                     target="_blank"
                     href="https://medium.com/deep-armor"
+                    rel="noreferrer"
                   >
                     blog
                   </Link>

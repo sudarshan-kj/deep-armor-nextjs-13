@@ -137,7 +137,7 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
       <div className={styles.testimonials}>
         {slicedTestimonials.map((testimonial) => (
-          <TestimonialCard {...testimonial} />
+          <TestimonialCard key={testimonial.id} {...testimonial} />
         ))}
         <div className={styles.controls}>
           <button

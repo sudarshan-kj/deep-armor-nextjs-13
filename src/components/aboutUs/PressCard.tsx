@@ -14,7 +14,7 @@ const PressCard: FC<PressType> = ({ name, date, description, link }) => {
         </div>
       </div>
       <p>{description}</p>
-      <a target="_blank" href={link}>
+      <a target="_blank" rel="noreferrer" href={link}>
         Read Article
       </a>
     </div>
