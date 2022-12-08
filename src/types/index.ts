@@ -1,8 +1,3 @@
-export type TestimonialType = {
-  description: string;
-  title: string;
-};
-
 export type SideNavigationItemType = {
   id: number;
   name: string;
@@ -27,4 +22,11 @@ export type PressType = {
   description: string;
   date: string;
   link: string;
+};
+
+export type TestimonialType = {
+  id: number;
+  from: string;
+  description: string;
+  image: any;
 };

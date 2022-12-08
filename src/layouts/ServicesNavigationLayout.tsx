@@ -1,6 +1,6 @@
 import React from "react";
 import SideNavigationLayout from "./SideNavigationLayout";
-import { services } from "../components/Solutions";
+import { services } from "src/components/main/Solutions";
 
 const ServicesNavigationLayout = ({
   children,
