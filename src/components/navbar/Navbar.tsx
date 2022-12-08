@@ -81,6 +81,7 @@ const Navbar = () => {
                       <ul>
                         {products.map((product) => (
                           <Link
+                            key={product.id}
                             onClick={handleSolutionLinkClick}
                             target="_blank"
                             href={product.linkPath}

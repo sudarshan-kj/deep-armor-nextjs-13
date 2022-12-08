@@ -157,6 +157,7 @@ const Testimonials = () => {
           .fill(0)
           .map((_: any, index: number) => (
             <div
+              key={index}
               className={`${styles.indicator} ${
                 index === testimonialSection ? styles.active : ""
               } `}
