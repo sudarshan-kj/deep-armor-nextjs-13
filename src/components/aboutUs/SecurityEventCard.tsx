@@ -11,9 +11,10 @@ const SecurityEventCard: FC<SecurityEventType> = ({
   description,
   date,
   image,
+  hidden,
 }) => {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${hidden ? styles.hidden : ""}`}>
       <div className={styles.image}>
         <Image src={image} fill={true} alt={image.toString()} />
       </div>

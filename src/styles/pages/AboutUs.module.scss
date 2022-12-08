@@ -1,4 +1,5 @@
 @import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
 
 .container {
   font-size: 1.1rem;
@@ -18,4 +19,29 @@
 .leadershipContainer {
   @include flex(center);
   flex-flow: row wrap;
+}
+
+.securityEventsContainer {
+  h2 {
+    margin: 2rem 0;
+  }
+  .conferenceLogos {
+    padding: 2rem;
+    background-color: $bg-color-card;
+    @include flex(center);
+    flex-wrap: wrap;
+    .logo {
+      height: 50px;
+      width: 50px;
+      @include md-and-above {
+        height: 80px;
+        width: 80px;
+      }
+      position: relative;
+      margin: 1rem;
+      img {
+        object-fit: contain;
+      }
+    }
+  }
 }

@@ -12,6 +12,7 @@ export type CommunityEventType = {
   location: string;
   date: string;
   image: any;
+  hidden?: boolean;
 };
 
 export interface SecurityEventType extends CommunityEventType {}
