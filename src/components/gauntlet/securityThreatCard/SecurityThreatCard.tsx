@@ -12,6 +12,12 @@ const SecurityThreatCard: FC<SecurityThreatInfoType> = ({
       <h2>{percentage}%</h2>
       <p>{description1}</p>
       <p>{description2}</p>
+      <div className={styles.overlay}>
+        <span>
+          Encrypting sensitive data reduces the likelihood that it is
+          unintentionally exposed
+        </span>
+      </div>
     </div>
   );
 };

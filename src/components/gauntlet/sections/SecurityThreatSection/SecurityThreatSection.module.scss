@@ -3,6 +3,6 @@
 
 .container {
   padding: 2rem 5rem;
-  @include flex(space-between);
+  @include flex(flex-start);
   flex-wrap: wrap;
 }

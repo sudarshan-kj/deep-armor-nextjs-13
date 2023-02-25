@@ -2,16 +2,52 @@
 @import "src/styles/variables.scss";
 
 .container {
+  position: relative;
   text-align: center;
   padding: 1rem;
   background: $gauntlet-bg-color-light;
   border-radius: 12px;
-  width: 240px;
+  width: 245px;
   margin: 1rem;
   border: 2px solid $gauntlet-security-threat-border-color;
+  overflow: hidden;
   h2 {
     font-size: 3rem;
     color: $gauntlet-security-threat-hl-color;
     font-weight: 600;
+  }
+
+  &:hover {
+    border: none;
+  }
+
+  &:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .overlay {
+    position: absolute;
+    background-color: #fcba38e5;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: transform 0.4s ease;
+  }
+
+  .overlay span {
+    font-size: 1.2rem;
+    position: absolute;
+    color: #fff;
+    font-weight: 500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    color: $gauntlet-bg-color-light;
   }
 }

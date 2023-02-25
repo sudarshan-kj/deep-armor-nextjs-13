@@ -28,18 +28,6 @@ const securityThreatInfo: Array<SecurityThreatInfoType> = [
     description1: "of the organizations have",
     description2: "of the organizations have",
   },
-  {
-    id: 0,
-    percentage: 56,
-    description1: "of the organizations have",
-    description2: "of the organizations have",
-  },
-  {
-    id: 1,
-    percentage: 77,
-    description1: "of the organizations have",
-    description2: "of the organizations have",
-  },
 ];
 
 const SecurityThreatSection = () => {
