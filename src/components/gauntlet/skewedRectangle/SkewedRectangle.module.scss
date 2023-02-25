@@ -5,12 +5,11 @@
   filter: drop-shadow(-1px 6px 3px hwb(0 0% 100% / 0.267));
   .skewedRectangle {
     position: relative;
-    height: 300px;
+    height: 600px;
     width: 100%;
-    background: $bg-color-light-gauntlet;
+    background: $gauntlet-bg-color-light;
     clip-path: polygon(0 0, 100% 0, 92% 86%, 4% 77%);
     @include md-and-above {
-      height: 600px;
     }
   }
 }

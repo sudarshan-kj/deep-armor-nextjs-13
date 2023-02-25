@@ -30,3 +30,10 @@ export type TestimonialType = {
   description: string;
   image: any;
 };
+
+export type SecurityThreatInfoType = {
+  id?: number;
+  percentage: number;
+  description1: string;
+  description2: string;
+};

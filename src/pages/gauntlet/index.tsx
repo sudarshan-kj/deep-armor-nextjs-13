@@ -1,4 +1,5 @@
 import React from "react";
+import SecurityThreatSection from "src/components/gauntlet/sections/SecurityThreatSection/SecurityThreatSection";
 import SkewedRectangle from "src/components/gauntlet/skewedRectangle/SkewedRectangle";
 import SkewedRectangleContent from "src/components/gauntlet/skewedRectangleContent/SkewedRectangleContent";
 
@@ -8,6 +9,7 @@ const GauntletPage = () => {
       <SkewedRectangle>
         <SkewedRectangleContent />
       </SkewedRectangle>
+      <SecurityThreatSection />
     </div>
   );
 };

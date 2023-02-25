@@ -44,25 +44,41 @@ const SkewedRectangleContent = () => {
       },
     ]
   );
+  const handleContactClick = () => {
+    document?.querySelector("footer")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className={styles.flexContainer}>
-      <div className={styles.textContent}>
-        <h1 className={styles.heading}>Gauntlet</h1>
-        <p>automated cloud security & compliance monitoring by deeparmor.com</p>
+    <div>
+      <div className={styles.navBar}>
+        <h3>&lt;logo&gt; </h3>
+        <h3 onClick={handleContactClick}>Contact Us</h3>
       </div>
-      <div className={styles.imagesBox}>
-        <div ref={sliderRef} style={{ height: "100%" }} className="keen-slider">
-          <div className="keen-slider__slide">
-            <Image src={dashboard1} fill={true} alt={dashboard1.toString()} />
-          </div>
-          <div className={"keen-slider__slide"}>
-            <Image src={dashboard2} fill={true} alt={dashboard2.toString()} />
-          </div>
-          <div className={"keen-slider__slide"}>
-            <Image src={dashboard3} fill={true} alt={dashboard3.toString()} />
-          </div>
-          <div className={"keen-slider__slide"}>
-            <Image src={dashboard4} fill={true} alt={dashboard4.toString()} />
+      <div className={styles.flexContainer}>
+        <div className={styles.textContent}>
+          <h1>Gauntlet</h1>
+          <p>
+            automated cloud security & compliance monitoring by deeparmor.com
+          </p>
+        </div>
+        <div className={styles.imagesBox}>
+          <div
+            ref={sliderRef}
+            style={{ height: "100%" }}
+            className="keen-slider"
+          >
+            <div className="keen-slider__slide">
+              <Image src={dashboard1} fill={true} alt={dashboard1.toString()} />
+            </div>
+            <div className={"keen-slider__slide"}>
+              <Image src={dashboard2} fill={true} alt={dashboard2.toString()} />
+            </div>
+            <div className={"keen-slider__slide"}>
+              <Image src={dashboard3} fill={true} alt={dashboard3.toString()} />
+            </div>
+            <div className={"keen-slider__slide"}>
+              <Image src={dashboard4} fill={true} alt={dashboard4.toString()} />
+            </div>
           </div>
         </div>
       </div>
