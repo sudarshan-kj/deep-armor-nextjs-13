@@ -9,8 +9,10 @@ export default function GauntletLayout({
 }) {
   return (
     <div className={styles.bodyContainer}>
-      {children}
-      <Footer />
+      <div className={styles.contentContainer}>
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -4,4 +4,8 @@
 .bodyContainer {
   background-color: $bg-color-gauntlet;
   color: #c3ebff;
+  .contentContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }
