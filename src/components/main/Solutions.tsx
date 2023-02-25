@@ -120,7 +120,7 @@ export const products: Array<ProductType> = [
     id: 0,
     name: "Cloud Security (Gauntlet)",
     icon: CloudSecurityGauntletIcon,
-    linkPath: "https://deeparmor.com/",
+    linkPath: "/gauntlet",
   },
   {
     id: 1,

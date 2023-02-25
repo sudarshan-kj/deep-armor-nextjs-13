@@ -1,0 +1,7 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.bodyContainer {
+  background-color: $bg-color-gauntlet;
+  color: #c3ebff;
+}

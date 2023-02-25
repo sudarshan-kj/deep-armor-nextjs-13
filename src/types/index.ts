@@ -1,7 +1,6 @@
 export type SideNavigationItemType = {
   id: number;
   name: string;
-
   linkPath: string;
 };
 

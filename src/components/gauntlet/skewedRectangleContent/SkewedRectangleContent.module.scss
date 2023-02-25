@@ -1,0 +1,31 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.flexContainer {
+  padding: 5rem;
+  @include flex("");
+  .textContent {
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 500;
+    }
+    p {
+      max-width: 470px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+  .imagesBox {
+    margin-left: 5rem;
+    width: 514px;
+    height: 288px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.233);
+    position: relative;
+    img {
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+}
