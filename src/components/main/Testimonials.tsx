@@ -72,9 +72,10 @@ const testimonials: TestimonialType[] = [
 
 const Testimonials = () => {
   const [testimonialSection, setTestimonialSection] = useState(0);
-  const [isMediumScreen, setIsMediumScreen] = useState<boolean | null>(null);
+  const [isMediumSizedOrGreaterScreen, setIsMediumSizedOrGreaterScreen] =
+    useState<boolean | null>(null);
 
-  let MAX_TESTIMONIALS_PER_SECTION = isMediumScreen ? 3 : 2;
+  let MAX_TESTIMONIALS_PER_SECTION = isMediumSizedOrGreaterScreen ? 3 : 1;
 
   const slicedTestimonials = testimonials.slice(
     MAX_TESTIMONIALS_PER_SECTION * testimonialSection,
@@ -88,7 +89,7 @@ const Testimonials = () => {
   /*it may look like we are unnecessarily using a state variable and useEffect here, but this is done to counter the rehydration
    problem mentioned here: https://nextjs.org/docs/messages/react-hydration-error*/
   useEffect(() => {
-    setIsMediumScreen(isScreenWidthGreaterThan768px);
+    setIsMediumSizedOrGreaterScreen(isScreenWidthGreaterThan768px);
   }, [isScreenWidthGreaterThan768px]);
 
   const handleNextClick = () => {

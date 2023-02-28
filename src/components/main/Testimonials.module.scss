@@ -13,6 +13,8 @@
     flex-wrap: wrap;
     margin-top: 3rem;
     position: relative;
+    min-height: 400px;
+
     @include md-and-above {
       min-height: 540px;
     }
@@ -31,7 +33,10 @@
     button {
       background: none;
       border: none;
-      margin: -40px;
+
+      @include md-and-above {
+        margin: -40px;
+      }
 
       &[disabled] svg {
         transition: fill 0.4s ease;

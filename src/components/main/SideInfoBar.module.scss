@@ -1,0 +1,29 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+.container {
+  position: absolute;
+  right: 0;
+  top: 500px;
+  background: $bg-color-side-info;
+  padding: 2.5rem 3rem;
+  hr {
+    border: 1px solid $item-border-light-blue;
+    margin: 2rem 0;
+  }
+}
+
+.sectionItemContainer {
+  border-radius: 6px;
+  @include flex(center);
+  flex-direction: column;
+  max-width: 160px;
+  h2 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
