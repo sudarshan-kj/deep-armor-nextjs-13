@@ -54,7 +54,7 @@ const securityEvents: SecurityEventType[] = [
   },
   {
     id: 1,
-    name: "SACON Breach & Attack Summit",
+    name: "SACON and Breach & Attack Summit",
     description:
       "Our team regularly speaks and conducts deep-tech security trainings at the Security Architecture Conference (SACON) and the Breach & Attack Summit in Bangalore, India. In addition to technical sessions, our team has participated in CISO programs to discuss the latest security threats and ways to improve security posture across multiple industry sectors",
     location: "Bengaluru",

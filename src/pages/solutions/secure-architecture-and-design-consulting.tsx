@@ -6,19 +6,25 @@ const SecureArchitectureAndDesignConsulting = () => {
   return (
     <div>
       <p>
-        Nisi in magna ipsum est officia. Dolor sit proident mollit ut velit
-        occaecat. Cupidatat deserunt cupidatat sunt labore nulla ex consectetur
-        reprehenderit occaecat voluptate incididunt consequat ullamco do. Sit
-        consequat nulla et dolore cupidatat dolore. Sit duis ut voluptate
-        laboris.
+        We can help you build highly secure and resilient systems from the
+        ground up.
       </p>
       <p>
-        Culpa incididunt laboris sint ad in ut. Excepteur culpa sit occaecat
-        fugiat. Ex aute est ea ad sit sit aliqua eiusmod tempor qui sit aute ut.
-        Commodo excepteur eiusmod consequat eiusmod et ut. In et nisi veniam est
-        cillum sit sit enim cupidatat. Adipisicing esse sit dolor tempor. Labore
-        non cillum reprehenderit qui cupidatat laboris incididunt Lorem laboris
-        elit nostrud quis.
+        Incorporating cybersecurity activities early in the product development
+        life cycle (Security Shift-left, in other words) can significantly
+        reduce the cost of handling vulnerabilities post-production. Our product
+        security architecture and design consulting services help in identifying
+        security objectives and threats even before your product is fully
+        implemented.
+      </p>
+      <p>
+        At this stage of the product life cycle, we use your product
+        architecture & design specifications documents, data flow diagrams, etc.
+        to derive Key Security Attributes (KSA) -- Assets, Trust Boundaries,
+        Adversary Profiles, Security objectives and security non-objectives for
+        the product. This information, combined with our comprehensive threat
+        models can help architects, developers and QA teams to build
+        high-quality, secure products.
       </p>
     </div>
   );

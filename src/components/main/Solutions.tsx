@@ -4,7 +4,7 @@ import DeviceIcon from "src/assets/icons/device-security.svg";
 import NetworkIcon from "src/assets/icons/network-security.svg";
 import WebMobileCloudIcon from "src/assets/icons/web-mobile-cloud-security.svg";
 import HardwareIcon from "src/assets/icons/hardware-security.svg";
-import VirtualCisoIcon from "src/assets/icons/virtual-ciso.svg";
+import SdlcAndProductCisoServices from "src/assets/icons/sdlc-and-product-ciso.svg";
 import TrainingIcon from "src/assets/icons/training.svg";
 import GdprIcon from "src/assets/icons/gdpr.svg";
 import ConsultingIcon from "src/assets/icons/consulting.svg";
@@ -84,9 +84,9 @@ export const services: Array<SolutionType> = [
   },
   {
     id: 3,
-    name: "Network Security",
+    name: "Network and Telecommunications Security",
     icon: NetworkIcon,
-    linkPath: "/solutions/network-security",
+    linkPath: "/solutions/network-and-telecommunications-security",
     isProductSecurityAssessment: true,
   },
   {
@@ -109,9 +109,9 @@ export const services: Array<SolutionType> = [
   },
   {
     id: 7,
-    name: "Virtual CISO Services for Products",
-    icon: VirtualCisoIcon,
-    linkPath: "/solutions/virtual-ciso-for-products",
+    name: "SDLC and Product CISO Services",
+    icon: SdlcAndProductCisoServices,
+    linkPath: "/solutions/sdlc-and-product-ciso-services",
   },
 ];
 

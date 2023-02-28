@@ -32,6 +32,7 @@ $img-width: 23%;
       color: $nav-hover-link-color;
       .mainTitle {
         color: #000;
+        font-size: 0.85rem;
       }
       .metaData {
         @include md-and-below {
@@ -52,7 +53,7 @@ $img-width: 23%;
     }
     .description {
       margin-top: 1rem;
-      color: grey;
+      color: rgb(75, 75, 75);
     }
   }
 }

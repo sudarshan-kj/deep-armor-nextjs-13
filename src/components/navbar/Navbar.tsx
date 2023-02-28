@@ -22,7 +22,7 @@ const Navbar = () => {
   }, [isScreenWidthGreaterThan768px]);
 
   useEffect(() => {
-    //prevent the body scrolling when the pop up is open
+    //prevent the body scrolling when the pop up is open ( when opened in mobile )
     if (openOptions) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
   }, [openOptions]);
