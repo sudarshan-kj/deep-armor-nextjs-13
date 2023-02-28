@@ -122,12 +122,12 @@ export const products: Array<ProductType> = [
     icon: CloudSecurityGauntletIcon,
     linkPath: "/gauntlet",
   },
-  {
-    id: 1,
-    name: "Cloud Cost Optimization (Recon)",
-    icon: CloudCostOptimizationIcon,
-    linkPath: "https://deeparmor.com/",
-  },
+  // {
+  //   id: 1,
+  //   name: "Cloud Cost Optimization (Recon)",
+  //   icon: CloudCostOptimizationIcon,
+  //   linkPath: "https://deeparmor.com/",
+  // },
   {
     id: 2,
     name: "Medtech Vulnerability Scoring",

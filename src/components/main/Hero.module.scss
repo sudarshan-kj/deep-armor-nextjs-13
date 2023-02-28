@@ -53,9 +53,10 @@
   .mask {
     height: 100%;
     width: 100%;
-    background-color: #1b5885af;
+    background-color: #1b598570;
+
     @include md-and-above {
-      background-color: #124f7bb3;
+      background-color: #1b598570;
     }
     position: absolute;
   }

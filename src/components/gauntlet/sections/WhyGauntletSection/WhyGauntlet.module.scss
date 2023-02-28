@@ -1,0 +1,36 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.container {
+  --traingle-width: 390px;
+  --traingle-height: 60px;
+  padding: 0 5rem;
+  padding-bottom: 2rem;
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .flexContainer {
+    @include flex(center);
+  }
+  .triangle {
+    height: 0;
+    width: 0;
+    border-right: var(--traingle-width) solid transparent;
+    border-left: var(--traingle-width) solid transparent;
+  }
+  .topTriangle {
+    border-bottom: var(--traingle-height) solid $gauntlet-bg-color-light;
+  }
+  .bottomTriangle {
+    border-top: var(--traingle-height) solid $gauntlet-bg-color-light;
+  }
+  .cardContent {
+    @include flex(center);
+    flex-wrap: wrap;
+    padding: 40px 60px;
+    width: calc(var(--traingle-width) * 2);
+    background-color: $gauntlet-bg-color-light;
+  }
+}

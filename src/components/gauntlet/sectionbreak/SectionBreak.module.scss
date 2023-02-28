@@ -1,0 +1,12 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.container {
+  @include flex(center);
+  .line {
+    border-bottom: 2px solid $gauntlet-bg-color-light;
+    width: 100%;
+    transform: rotate(-5deg);
+    margin: 100px 0;
+  }
+}

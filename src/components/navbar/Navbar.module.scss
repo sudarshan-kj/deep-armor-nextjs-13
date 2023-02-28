@@ -26,6 +26,7 @@
     @include flex(space-between);
     h4 {
       margin: 1rem 2rem;
+      font-weight: 500;
     }
     a {
       text-decoration: none;
@@ -47,16 +48,21 @@
         .services {
           border-right: 1px solid black;
           padding: 1rem;
+          h3 {
+            font-weight: 600;
+          }
         }
         .products {
           padding: 1rem;
+          h3 {
+            font-weight: 600;
+          }
         }
         ul {
           padding: 0;
           list-style: none;
         }
         ul li {
-          font-weight: bold;
           font-size: 0.8rem;
           width: 150px;
           margin-top: 1rem;

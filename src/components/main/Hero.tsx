@@ -13,8 +13,8 @@ const Hero = () => {
           </h2>
           <h2>Peace of mind</h2>
           <p>
-            an award-winning information security firm and a trusted partner to
-            over 25 companies around the world.
+            Award-winning information security firm. Trusted partner to over 35
+            companies across industry sectors & geographies.
           </p>
         </div>
         <div className={styles.image}>

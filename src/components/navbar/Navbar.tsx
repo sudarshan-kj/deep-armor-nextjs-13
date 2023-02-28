@@ -58,12 +58,12 @@ const Navbar = () => {
                 className={styles.solutionsActionItem}
               >
                 <h4>
-                  <Link href="/solutions">solutions</Link>
+                  <Link href="/solutions">Solutions</Link>
                 </h4>
                 {openSolutionsPopup && (
                   <div className={styles.solutionsPopupMenu}>
                     <div className={styles.services}>
-                      <h3>services</h3>
+                      <h3>Services</h3>
                       <ul>
                         {services.map((service) => (
                           <Link
@@ -77,7 +77,7 @@ const Navbar = () => {
                       </ul>
                     </div>
                     <div className={styles.products}>
-                      <h3>products</h3>
+                      <h3>Products</h3>
                       <ul>
                         {products.map((product) => (
                           <Link
@@ -102,14 +102,14 @@ const Navbar = () => {
                   rel="noreferrer"
                   href="https://medium.com/deep-armor"
                 >
-                  blog
+                  Blog
                 </Link>
               </h4>
               <h4>
-                <Link href="/about-us">about us</Link>
+                <Link href="/about-us">About us</Link>
               </h4>
               <h4 className={styles.contact} onClick={handleContactClick}>
-                contact
+                Contact
               </h4>
             </>
           )}
@@ -129,7 +129,7 @@ const Navbar = () => {
               >
                 <h1>
                   <Link onClick={handleSolutionLinkClick} href="/solutions">
-                    solutions
+                    Solutions
                   </Link>
                 </h1>
                 <h1>
@@ -139,15 +139,15 @@ const Navbar = () => {
                     href="https://medium.com/deep-armor"
                     rel="noreferrer"
                   >
-                    blog
+                    Blog
                   </Link>
                 </h1>
                 <h1>
                   <Link onClick={handleSolutionLinkClick} href="/about-us">
-                    about us
+                    About us
                   </Link>
                 </h1>
-                <h1 onClick={handleContactClick}>contact us</h1>
+                <h1 onClick={handleContactClick}>Contact us</h1>
               </div>
             </div>
           )}

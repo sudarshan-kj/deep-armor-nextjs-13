@@ -6,7 +6,6 @@ import hardware from "src/assets/images/hardware.jpg";
 import { SecurityEventType } from "src/types";
 import styles from "src/styles/pages/AboutUs.module.scss";
 import BlackHat from "src/assets/conference-logos/1.png";
-import Clavent from "src/assets/conference-logos/2.jpg";
 import BlackHatAsia from "src/assets/conference-logos/3.png";
 import Shield from "src/assets/conference-logos/4.png";
 import Target from "src/assets/conference-logos/5.png";
@@ -17,7 +16,6 @@ import Shakacon from "src/assets/conference-logos/9.png";
 import BlackHatEurope from "src/assets/conference-logos/10.png";
 import First from "src/assets/conference-logos/11.png";
 import SanJose from "src/assets/conference-logos/12.jpg";
-import WT from "src/assets/conference-logos/13.jpg";
 import Dsci from "src/assets/conference-logos/14.png";
 import Lock from "src/assets/conference-logos/15.png";
 import Sacon from "src/assets/conference-logos/16.png";
@@ -26,7 +24,6 @@ import Image from "next/image";
 
 const conferenceLogos = [
   BlackHat,
-  Clavent,
   BlackHatAsia,
   Shield,
   Target,
@@ -37,7 +34,7 @@ const conferenceLogos = [
   BlackHatEurope,
   First,
   SanJose,
-  WT,
+
   Dsci,
   Lock,
   Sacon,
@@ -62,15 +59,6 @@ const securityEvents: SecurityEventType[] = [
     date: "2022",
     image: hardware,
   },
-  {
-    id: 2,
-    name: "Python Conference",
-    description:
-      "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut. ",
-    location: "New Delhi",
-    date: "2021",
-    image: hardware,
-  },
   //dummy card so that we get atleast a card's space
 ];
 
@@ -80,7 +68,7 @@ const SecurityEvents = () => {
       {securityEvents.map((event) => (
         <SecurityEventCard key={event.id} {...event} />
       ))}
-      <h2>Conferences given at</h2>
+      <h2>Training and Presentations at</h2>
       <div className={styles.logosContainer}>
         <div className={styles.conferenceLogos}>
           {conferenceLogos.map((logo, index) => (

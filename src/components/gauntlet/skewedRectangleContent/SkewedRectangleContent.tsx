@@ -57,9 +57,7 @@ const SkewedRectangleContent = () => {
       <div className={styles.flexContainer}>
         <div className={styles.textContent}>
           <h1>Gauntlet</h1>
-          <p>
-            automated cloud security & compliance monitoring by deeparmor.com
-          </p>
+          <p>Automated cloud security & compliance monitoring by Deep Armor</p>
         </div>
         <div className={styles.imagesBox}>
           <div

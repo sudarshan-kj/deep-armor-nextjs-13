@@ -10,9 +10,8 @@ const Footer = () => {
         <h3>
           Reach out to us at <span>services@deeparmor.com</span>
         </h3>
-        <h3>We look forward to hearing from you!</h3>
       </div>
-      <h6>© 2022 All rights reserved</h6>
+      <h6>© 2023 All rights reserved</h6>
     </footer>
   );
 };
