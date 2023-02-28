@@ -35,7 +35,7 @@ const WhyGauntlet = () => {
           <div className={styles.card}>
             <div className={styles.cardContent}>
               {whyGauntletPointers.map((reason) => (
-                <TextWithTickMark {...reason} />
+                <TextWithTickMark key={reason.id} {...reason} />
               ))}
             </div>
           </div>

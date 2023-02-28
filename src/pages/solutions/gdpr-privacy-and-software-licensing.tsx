@@ -19,8 +19,8 @@ const GdprPrivacyAndSoftwareLicensing = () => {
         privacy and open source related services. Our offerings in this space
         include:
         <ol>
-          {listItems.map((item) => (
-            <ListItemWithTopMargin>{item}</ListItemWithTopMargin>
+          {listItems.map((item, index) => (
+            <ListItemWithTopMargin key={index}>{item}</ListItemWithTopMargin>
           ))}
         </ol>
       </p>
