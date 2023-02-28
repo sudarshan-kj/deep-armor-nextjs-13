@@ -29,9 +29,10 @@
   .logosContainer {
     .conferenceLogos {
       padding: 2rem;
-      background-color: $bg-color-card;
+      background-color: $bg-color-conference-logos-card;
       flex-wrap: wrap;
       @include flex(center);
+      border-radius: 10px;
       .logo {
         height: 50px;
         width: 50px;

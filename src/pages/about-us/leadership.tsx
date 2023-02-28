@@ -2,6 +2,10 @@ import AboutUsItemLayout from "src/layouts/AboutUsItemLayout";
 import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
 import styles from "src/styles/pages/AboutUs.module.scss";
 import LeaderCard from "src/components/aboutUs/LeaderCard";
+import SumanthDP from "src/assets/images/man-sumanth.jpeg";
+import SridharDP from "src/assets/images/man-sridhar.jpeg";
+import NitinDP from "src/assets/images/man-nitin.jpeg";
+import SunilDP from "src/assets/images/man-sunil.jpeg";
 
 type LeadersType = {
   id: number;
@@ -15,8 +19,7 @@ type LeadersType = {
 const leaders: LeadersType[] = [
   {
     id: 0,
-    thumbnail:
-      "https://media.licdn.com/dms/image/C4E03AQFZiieYZEkNDw/profile-displayphoto-shrink_200_200/0/1538019535371?e=1683158400&v=beta&t=fEsU3jtQVlDYqpeKD3-qT7TbMzeg-im_rWIZc5dcZUo",
+    thumbnail: SumanthDP,
     name: "Sumanth",
     designation: "Founder and CEO",
     linkedinLink: "https://www.linkedin.com/in/snaropanth",
@@ -24,8 +27,7 @@ const leaders: LeadersType[] = [
   },
   {
     id: 1,
-    thumbnail:
-      "https://media.licdn.com/dms/image/C5103AQEwqm5Zu0e8MA/profile-displayphoto-shrink_200_200/0/1556669260558?e=1683158400&v=beta&t=H530ZOnxWhYz0hPuvYPvVoi2mt0W2a7VTzp9m7Z-3i8",
+    thumbnail: SridharDP,
     name: "Sridhar",
     designation: "Advisor",
     linkedinLink: "https://www.linkedin.com/in/sridhar-s-60b3326",
@@ -33,8 +35,7 @@ const leaders: LeadersType[] = [
   },
   {
     id: 2,
-    thumbnail:
-      "https://media.licdn.com/dms/image/C5103AQF4Qg4dD-T90g/profile-displayphoto-shrink_200_200/0/1521623097173?e=1683158400&v=beta&t=20_J21c4HwILgX48iu-7-Oz7ueDbUbzGd44zTzieBkQ",
+    thumbnail: NitinDP,
     name: "Nitin Lakshmanan",
     designation: "AVP Security Expert",
     linkedinLink: "https://www.linkedin.com/in/nitin-lakshmanan-66088075",
@@ -42,8 +43,7 @@ const leaders: LeadersType[] = [
   },
   {
     id: 3,
-    thumbnail:
-      "https://media.licdn.com/dms/image/C5103AQGIdPNEIqqgWQ/profile-displayphoto-shrink_200_200/0/1581318076473?e=1683158400&v=beta&t=NVLWtC5Vv6iVqtCNKA-DC5poa2EWSjn4nQZM0fjqr60",
+    thumbnail: SunilDP,
     name: "Sunil Kumar",
     designation: "AVP Security Research",
     linkedinLink: "https://www.linkedin.com/in/sunil-kumar-b4a2616b",
