@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import styles from "./Testimonials.module.scss";
 import TestimonialCard from "./TestimonialCard";
 import hardware from "src/assets/images/hardware.jpg";
-import sumanth from "src/assets/images/man-sumanth.png";
-import sridhar from "src/assets/images/man-sridhar.jpg";
 import mobile from "src/assets/images/mobile.jpg";
 import signature from "src/assets/images/signature.jpg";
 import training from "src/assets/images/training.jpg";
@@ -16,80 +14,58 @@ import { useMediaQuery } from "react-responsive";
 const testimonials: TestimonialType[] = [
   {
     id: 0,
-    from: "First, Jacklabs",
+    from: "Head of Security, Intel Sports",
     description:
-      "Occaecat pariatur occaecat nostrud culpa adipisicing sunt. Deserunt amet labore non aute Lorem.",
+      "“The quality of work delivered by Deep Armor so far has been outstanding. I can recommend you to other BUs without a doubt and would be happy to kick start the 'preferred vendors' process.”",
     image: hardware,
   },
   {
     id: 1,
-    from: "Second, McAfee",
+    from: "Principal Architect, Swiggy",
     description:
-      "Eiusmod ex excepteur aliqua reprehenderit mollit cillum cillum magna.",
-    image: sumanth,
+      "“Thank you so much. Your prompt and detailed responses have always been a great help for me to put together these processes that would hopefully help us improve our security posture over time.”",
+    image: mobile,
   },
   {
     id: 2,
-    from: "Third, Cisco",
+    from: "CTO & Senior Director, Cloud Networking",
     description:
-      "Eu cillum consectetur voluptate Lorem fugiat enim in cillum nostrud minim. ",
-    image: sridhar,
+      "“There are collaterals we are deriving out of this effort that can be leveraged for long term integration into our release process. Thank you and your team, it has been great experience. Deep Armor team has done excellent work in doing PEN testing for DC products”",
+    image: mobile,
   },
   {
     id: 3,
-    from: "Fourth, Dark Labs",
+    from: "VP of Software Engineering",
     description:
-      "Magna consequat incididunt nisi do ipsum incididunt veniam do. Dolor incididunt labore non laboris. ",
+      "“Thank you for all the fantastic work on [our products] in the past few years.”",
     image: mobile,
   },
   {
     id: 4,
-    from: "Fifth, Alibaba",
+    from: "Director of Security, Planet Labs",
     description:
-      "Occaecat pariatur occaecat nostrud culpa adipisicing sunt. Deserunt amet labore non aute Lorem.",
+      "“We are very happy with the quality of vulnerabilities that were uncovered as part of this engagement. The CTF and the [security] labs were stars of the show and everyone really enjoyed them (including the security team)”",
     image: mobile,
   },
   {
     id: 5,
-    from: "Sixth, McAfee",
+    from: "Senior Architect, Intel IoTG",
     description:
-      "Eu cillum consectetur voluptate Lorem fugiat enim in cillum nostrud minim. ",
+      "“Thanks again for all the help. It really helped to close security validation items. We enjoyed working with you on this.”",
     image: hardware,
   },
   {
     id: 6,
-    from: "Seventh, Cisco",
+    from: "SRE, Rockset",
     description:
-      "Occaecat pariatur occaecat nostrud culpa adipisicing sunt. Deserunt amet labore non aute Lorem.",
+      "“Excellent findings. Having a 3rd party review a new feature like our [redacted] implementation is a great way to validate that we have built it correctly.”",
     image: signature,
   },
   {
     id: 7,
-    from: "Eigth, Dark Labs",
+    from: "Black Hat Trainings",
     description:
-      "Dolore eiusmod fugiat reprehenderit mollit excepteur qui ullamco non ut. ",
-    image: training,
-  },
-
-  {
-    id: 8,
-    from: "Ninth, McAfee",
-    description:
-      "Occaecat pariatur occaecat nostrud culpa adipisicing sunt. Deserunt amet labore non aute Lorem.",
-    image: hardware,
-  },
-  {
-    id: 9,
-    from: "Tenth, Cisco",
-    description:
-      "Occaecat pariatur occaecat nostrud culpa adipisicing sunt. Deserunt amet labore non aute Lorem.",
-    image: hardware,
-  },
-  {
-    id: 10,
-    from: "Eleventh, Dark Labs",
-    description:
-      "Occaecat pariatur occaecat nostrud culpa adipisicing sunt. Deserunt amet labore non aute Lorem.",
+      "“Course was great overall and met expectations. Even with my limited background with Linux, Python, Etc. I was still able to learn and understand the concepts. Instructors knew the material well and were prepared to answer questions. Great course! Thank you.”",
     image: training,
   },
 ];
@@ -98,7 +74,7 @@ const Testimonials = () => {
   const [testimonialSection, setTestimonialSection] = useState(0);
   const [isMediumScreen, setIsMediumScreen] = useState<boolean | null>(null);
 
-  let MAX_TESTIMONIALS_PER_SECTION = isMediumScreen ? 4 : 2;
+  let MAX_TESTIMONIALS_PER_SECTION = isMediumScreen ? 3 : 2;
 
   const slicedTestimonials = testimonials.slice(
     MAX_TESTIMONIALS_PER_SECTION * testimonialSection,

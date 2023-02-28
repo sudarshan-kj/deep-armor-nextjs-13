@@ -5,58 +5,60 @@ import SecurityEventCard from "src/components/aboutUs/SecurityEventCard";
 import hardware from "src/assets/images/hardware.jpg";
 import { SecurityEventType } from "src/types";
 import styles from "src/styles/pages/AboutUs.module.scss";
-import BlackHat from "src/assets/conference-logos/1.png";
-import BlackHatAsia from "src/assets/conference-logos/3.png";
-import Shield from "src/assets/conference-logos/4.png";
-import Target from "src/assets/conference-logos/5.png";
-import Xv from "src/assets/conference-logos/6.png";
-import Nasscom from "src/assets/conference-logos/7.png";
-import Temple from "src/assets/conference-logos/8.png";
-import Shakacon from "src/assets/conference-logos/9.png";
-import BlackHatEurope from "src/assets/conference-logos/10.png";
-import First from "src/assets/conference-logos/11.png";
-import SanJose from "src/assets/conference-logos/12.jpg";
-import Dsci from "src/assets/conference-logos/14.png";
-import Lock from "src/assets/conference-logos/15.png";
-import Sacon from "src/assets/conference-logos/16.png";
+
+import BlackHat from "src/assets/conference-logos/black-hat-logo.png";
+import First from "src/assets/conference-logos/first-logo.png";
+import OwaspAppSec from "src/assets/conference-logos/owasp-appsec-logo.png";
+import InsomniHack from "src/assets/conference-logos/insomnihack-logo.png";
+import Troopers from "src/assets/conference-logos/troopers-logo.png";
+import NuitDuHack from "src/assets/conference-logos/nuit-du-hack-logo.png";
+import SecurityFest from "src/assets/conference-logos/security-fest-logo.png";
+import IotShow from "src/assets/conference-logos/iot-show-logo.png";
+import Nasscom from "src/assets/conference-logos/nasscom-logo.png";
+import Dsci from "src/assets/conference-logos/dsci-logo.png";
+import IotSf from "src/assets/conference-logos/iot-sf-logo.png";
+import Pacsec from "src/assets/conference-logos/pacsec-logo.png";
+import Shakacon from "src/assets/conference-logos/shakacon-logo.png";
+import Ciso from "src/assets/conference-logos/ciso-logo.jpeg";
+import OwaspSeaside from "src/assets/conference-logos/owasp-seaside-logo.jpeg";
 
 import Image from "next/image";
 
 const conferenceLogos = [
   BlackHat,
-  BlackHatAsia,
-  Shield,
-  Target,
-  Xv,
-  Nasscom,
-  Temple,
-  Shakacon,
-  BlackHatEurope,
   First,
-  SanJose,
-
+  OwaspAppSec,
+  InsomniHack,
+  Troopers,
+  NuitDuHack,
+  SecurityFest,
+  IotShow,
+  Nasscom,
   Dsci,
-  Lock,
-  Sacon,
+  IotSf,
+  Pacsec,
+  Shakacon,
+  Ciso,
+  OwaspSeaside,
 ];
 
 const securityEvents: SecurityEventType[] = [
   {
     id: 0,
-    name: "Black Hat Conference",
+    name: "Black Hat Events",
     description:
-      "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut. ",
+      "Deep Armor has been invited three times to conduct trainings at Black Hat USA, Las Vegas. This is one of the most prestigious security events in the world. Our innovative research and hands-on approaches for learning IoT security has been very well received by students at Black Hat Events. Our security team has also presented our research at Black Hat Europe and Asia.",
     location: "Las Vegas",
     date: "2019",
     image: hardware,
   },
   {
     id: 1,
-    name: "Javascript Conference",
+    name: "SACON Breach & Attack Summit",
     description:
-      "Minim sunt velit officia do voluptate ad aliqua nulla fugiat ut do in tempor. Ipsum quis occaecat reprehenderit Lorem tempor culpa aliqua consectetur non commodo. Mollit est duis mollit consectetur non consequat Lorem. Dolor Lorem ut cupidatat anim ipsum ut. ",
+      "Our team regularly speaks and conducts deep-tech security trainings at the Security Architecture Conference (SACON) and the Breach & Attack Summit in Bangalore, India. In addition to technical sessions, our team has participated in CISO programs to discuss the latest security threats and ways to improve security posture across multiple industry sectors",
     location: "Bengaluru",
-    date: "2022",
+    date: "2020",
     image: hardware,
   },
   //dummy card so that we get atleast a card's space
