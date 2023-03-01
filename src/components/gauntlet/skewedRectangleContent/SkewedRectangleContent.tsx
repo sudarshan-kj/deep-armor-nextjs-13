@@ -89,23 +89,21 @@ const SkewedRectangleContent = () => {
           </div>
           {loaded && instanceRef.current && (
             <div className={styles.dots}>
-              {[
-                ...Array(
-                  instanceRef.current.track.details.slides.length
-                ).keys(),
-              ].map((idx) => {
-                return (
-                  <div
-                    key={idx}
-                    onClick={() => {
-                      instanceRef.current?.moveToIdx(idx);
-                    }}
-                    className={`${styles.dot} ${
-                      currentSlide === idx ? styles.active : ""
-                    }`}
-                  />
-                );
-              })}
+              {[...Array(instanceRef.current.track.details.slides.length)].map(
+                (_, idx) => {
+                  return (
+                    <div
+                      key={idx}
+                      onClick={() => {
+                        instanceRef.current?.moveToIdx(idx);
+                      }}
+                      className={`${styles.dot} ${
+                        currentSlide === idx ? styles.active : ""
+                      }`}
+                    />
+                  );
+                }
+              )}
             </div>
           )}
         </div>

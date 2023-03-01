@@ -53,14 +53,14 @@
       @include flex(center);
 
       .dot {
-        width: 8px;
-        height: 8px;
+        width: 12px;
+        height: 12px;
         border-radius: 50%;
         background-color: $gauntlet-carousel-indicator-off;
         border: none;
         margin: 1rem;
         transform-origin: center center;
-
+        transition: background-color 0.4 ease-in;
         &:hover {
           cursor: pointer;
         }
