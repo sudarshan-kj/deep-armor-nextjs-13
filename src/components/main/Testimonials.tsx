@@ -11,20 +11,27 @@ import ArrowRight from "src/assets/icons/arrow-right.svg";
 import ArrowLeft from "src/assets/icons/arrow-left.svg";
 import { useMediaQuery } from "react-responsive";
 
+import IntelSportsImage from "src/assets/images/intel-sports.png";
+import IntelIotgImage from "src/assets/images/intel-iotg.png";
+import SwiggyImage from "src/assets/images/swiggy.png";
+import RocksetImage from "src/assets/images/rockset.jpg";
+import BlackHatImage from "src/assets/images/black-hat.png";
+import PlanetLabsImage from "src/assets/images/planet-labs.png";
+
 const testimonials: TestimonialType[] = [
   {
     id: 0,
     from: "Head of Security, Intel Sports",
     description:
       "“The quality of work delivered by Deep Armor so far has been outstanding. I can recommend you to other BUs without a doubt and would be happy to kick start the 'preferred vendors' process.”",
-    image: hardware,
+    image: IntelSportsImage,
   },
   {
     id: 1,
     from: "Principal Architect, Swiggy",
     description:
       "“Thank you so much. Your prompt and detailed responses have always been a great help for me to put together these processes that would hopefully help us improve our security posture over time.”",
-    image: mobile,
+    image: SwiggyImage,
   },
   {
     id: 2,
@@ -45,28 +52,28 @@ const testimonials: TestimonialType[] = [
     from: "Director of Security, Planet Labs",
     description:
       "“We are very happy with the quality of vulnerabilities that were uncovered as part of this engagement. The CTF and the [security] labs were stars of the show and everyone really enjoyed them (including the security team)”",
-    image: mobile,
+    image: PlanetLabsImage,
   },
   {
     id: 5,
     from: "Senior Architect, Intel IoTG",
     description:
       "“Thanks again for all the help. It really helped to close security validation items. We enjoyed working with you on this.”",
-    image: hardware,
+    image: IntelIotgImage,
   },
   {
     id: 6,
     from: "SRE, Rockset",
     description:
       "“Excellent findings. Having a 3rd party review a new feature like our [redacted] implementation is a great way to validate that we have built it correctly.”",
-    image: signature,
+    image: RocksetImage,
   },
   {
     id: 7,
     from: "Black Hat Trainings",
     description:
       "“Course was great overall and met expectations. Even with my limited background with Linux, Python, Etc. I was still able to learn and understand the concepts. Instructors knew the material well and were prepared to answer questions. Great course! Thank you.”",
-    image: training,
+    image: BlackHatImage,
   },
 ];
 
