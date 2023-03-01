@@ -1,6 +1,7 @@
 import React from "react";
 import TextWithTickMark from "../../textWithTickMark/TextWithTickMark";
 import styles from "./WhyGauntlet.module.scss";
+import handleViewport from "react-in-viewport";
 
 const whyGauntletPointers = [
   {
@@ -25,9 +26,12 @@ const whyGauntletPointers = [
   },
 ];
 
-const WhyGauntlet = () => {
+const WhyGauntlet = ({ inViewport, forwardedRef }: any) => {
   return (
-    <div className={styles.container}>
+    <div
+      ref={forwardedRef}
+      className={`${styles.container} ${inViewport && styles.drop}`}
+    >
       <h1>why Gauntlet?</h1>
       <div className={styles.flexContainer}>
         <div>
@@ -46,4 +50,4 @@ const WhyGauntlet = () => {
   );
 };
 
-export default WhyGauntlet;
+export default handleViewport(WhyGauntlet);

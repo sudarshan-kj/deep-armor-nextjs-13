@@ -16,3 +16,9 @@
     font-size: 1.4rem;
   }
 }
+
+.drop {
+  animation: drop 1s;
+}
+
+@include dropAnimation(-20px);

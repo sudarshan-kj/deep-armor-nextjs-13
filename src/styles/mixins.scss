@@ -49,3 +49,15 @@
     @content;
   }
 }
+
+@mixin dropAnimation($dropValue: "-80px") {
+  @keyframes drop {
+    from {
+      transform: translateY(#{$dropValue});
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

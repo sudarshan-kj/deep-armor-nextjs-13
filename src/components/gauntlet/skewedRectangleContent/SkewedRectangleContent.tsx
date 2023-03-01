@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Image from "next/image";
 import dashboard1 from "src/assets/images/gauntlet/dashboard-1.png";
 import dashboard2 from "src/assets/images/gauntlet/dashboard-2.png";
@@ -9,10 +9,19 @@ import { useKeenSlider } from "keen-slider/react";
 import styles from "./SkewedRectangleContent.module.scss";
 
 const SkewedRectangleContent = () => {
-  const [sliderRef] = useKeenSlider<HTMLDivElement>(
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel);
+      },
+      created() {
+        setLoaded(true);
+      },
     },
+
     [
       (slider) => {
         let timeout: ReturnType<typeof setTimeout>;
@@ -78,6 +87,27 @@ const SkewedRectangleContent = () => {
               <Image src={dashboard4} fill={true} alt={dashboard4.toString()} />
             </div>
           </div>
+          {loaded && instanceRef.current && (
+            <div className={styles.dots}>
+              {[
+                ...Array(
+                  instanceRef.current.track.details.slides.length
+                ).keys(),
+              ].map((idx) => {
+                return (
+                  <div
+                    key={idx}
+                    onClick={() => {
+                      instanceRef.current?.moveToIdx(idx);
+                    }}
+                    className={`${styles.dot} ${
+                      currentSlide === idx ? styles.active : ""
+                    }`}
+                  />
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>

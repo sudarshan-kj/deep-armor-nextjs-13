@@ -28,6 +28,6 @@
     "ext/types/**/*.ts",
     "src/assets/icons/index.js",
     ".next/types/**/*.ts"
-  ],
+, "src/components/gauntlet/sections/WhyGauntletSection/WhyGauntlet.tsx", "src/components/gauntlet/footer/Footer.tsx"  ],
   "exclude": ["node_modules"]
 }

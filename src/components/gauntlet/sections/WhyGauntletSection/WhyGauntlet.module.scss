@@ -34,3 +34,9 @@
     background-color: $gauntlet-bg-color-light;
   }
 }
+
+.drop {
+  animation: drop 1s;
+}
+
+@include dropAnimation();

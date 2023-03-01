@@ -7,7 +7,7 @@ export default function GauntletLayout({
 }: {
   children: React.ReactElement;
 }) {
-  return <div style={{ padding: "5rem" }}>This page is under development.</div>;
+  // return <div style={{ padding: "5rem" }}>This page is under development.</div>;
 
   return (
     <div className={styles.bodyContainer}>

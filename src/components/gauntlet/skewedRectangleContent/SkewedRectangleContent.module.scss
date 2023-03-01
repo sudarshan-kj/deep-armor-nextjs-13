@@ -48,5 +48,29 @@
       object-fit: cover;
       border-radius: inherit;
     }
+
+    .dots {
+      @include flex(center);
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $gauntlet-carousel-indicator-off;
+        border: none;
+        margin: 1rem;
+        transform-origin: center center;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .active {
+        height: 12px;
+        width: 12px;
+        transform-origin: center center;
+        background-color: $gauntlet-carousel-indicator-on;
+      }
+    }
   }
 }
