@@ -29,6 +29,7 @@ export type TestimonialType = {
   from: string;
   description: string;
   image: any;
+  animationDirection?: "left" | "right";
 };
 
 export type SecurityThreatInfoType = {

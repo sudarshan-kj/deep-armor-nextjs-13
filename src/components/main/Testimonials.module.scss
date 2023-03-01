@@ -78,6 +78,7 @@
   background: $bg-color-card;
   margin: 1rem;
   min-height: 200px;
+
   .from {
     width: 120px;
     @include flex(center);
@@ -102,5 +103,35 @@
   .description {
     max-width: 200px;
     margin-left: 1rem;
+  }
+}
+
+.slideLeft {
+  animation: fadeInLeft 0.5s;
+}
+
+.slideRight {
+  animation: fadeInRight 0.5s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }

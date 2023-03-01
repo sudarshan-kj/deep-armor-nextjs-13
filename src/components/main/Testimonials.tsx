@@ -74,6 +74,9 @@ const Testimonials = () => {
   const [testimonialSection, setTestimonialSection] = useState(0);
   const [isMediumSizedOrGreaterScreen, setIsMediumSizedOrGreaterScreen] =
     useState<boolean | null>(null);
+  const [animationDirection, setAnimationDirection] = useState<
+    "left" | "right"
+  >("right");
 
   let MAX_TESTIMONIALS_PER_SECTION = isMediumSizedOrGreaterScreen ? 3 : 1;
 
@@ -94,10 +97,12 @@ const Testimonials = () => {
 
   const handleNextClick = () => {
     setTestimonialSection((p) => p + 1);
+    setAnimationDirection("left");
   };
 
   const handlePreviousClick = () => {
     setTestimonialSection((p) => p - 1);
+    setAnimationDirection("right");
   };
 
   const shouldDisabledPreviousClick = testimonialSection === 0;
@@ -114,7 +119,11 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
       <div className={styles.testimonials}>
         {slicedTestimonials.map((testimonial) => (
-          <TestimonialCard key={testimonial.id} {...testimonial} />
+          <TestimonialCard
+            animationDirection={animationDirection}
+            key={testimonial.id}
+            {...testimonial}
+          />
         ))}
         <div className={styles.controls}>
           <button

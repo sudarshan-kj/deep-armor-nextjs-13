@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./SideNavigationLayout.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";

@@ -3,9 +3,18 @@ import { TestimonialType } from "src/types";
 import styles from "./Testimonials.module.scss";
 import Image from "next/image";
 
-const TestimonialCard: FC<TestimonialType> = ({ from, description, image }) => {
+const TestimonialCard: FC<TestimonialType> = ({
+  animationDirection,
+  from,
+  description,
+  image,
+}) => {
   return (
-    <div className={styles.card}>
+    <div
+      className={`${styles.card} ${
+        animationDirection === "left" ? styles.slideLeft : styles.slideRight
+      }`}
+    >
       <section className={styles.from}>
         <div className={styles.image}>
           <Image src={image} fill={true} alt="testimonial image" />

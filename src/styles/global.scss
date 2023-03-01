@@ -22,6 +22,7 @@ h6 {
 body {
   background-color: $bg-color-light-blue;
   margin: 0;
+  animation: fadeIn 0.5s;
 }
 
 body main {
@@ -86,4 +87,13 @@ body main {
     url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf)
       format("truetype");
   font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

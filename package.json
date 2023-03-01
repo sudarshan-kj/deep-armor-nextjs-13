@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^1.0.0-beta.6",
     "@next/font": "^13.0.4",
     "keen-slider": "^6.8.5",
     "next": "13.0.0",
