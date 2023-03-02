@@ -6,7 +6,7 @@ import hardware from "src/assets/images/hardware.jpg";
 import { SecurityEventType } from "src/types";
 import styles from "src/styles/pages/AboutUs.module.scss";
 
-import BlackHat from "src/assets/conference-logos/black-hat-logo.png";
+import BlackHat from "src/assets/conference-logos/blackhat-logo.png";
 import First from "src/assets/conference-logos/first-logo.png";
 import OwaspAppSec from "src/assets/conference-logos/owasp-appsec-logo.png";
 import InsomniHack from "src/assets/conference-logos/insomnihack-logo.png";
