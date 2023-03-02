@@ -132,7 +132,7 @@ export const products: Array<ProductType> = [
     id: 2,
     name: "Medtech Vulnerability Scoring",
     icon: MedtechIcon,
-    linkPath: "https://deeparmor.com/",
+    linkPath: "https://cvss-rubric.deeparmor.com",
   },
 ];
 

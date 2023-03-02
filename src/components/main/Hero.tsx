@@ -13,7 +13,7 @@ const Hero = () => {
           </h2>
           <h2>Peace of mind</h2>
           <p>
-            Award-winning information security firm. Trusted partner to over 35
+            Award-winning cybersecurity firm. Trusted partner to over 35
             companies across industry sectors & geographies.
           </p>
         </div>

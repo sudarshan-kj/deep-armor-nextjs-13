@@ -1,10 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Testimonials.module.scss";
 import TestimonialCard from "./TestimonialCard";
-import hardware from "src/assets/images/hardware.jpg";
 import mobile from "src/assets/images/mobile.jpg";
-import signature from "src/assets/images/signature.jpg";
-import training from "src/assets/images/training.jpg";
 import { TestimonialType } from "src/types";
 import { useState } from "react";
 import ArrowRight from "src/assets/icons/arrow-right.svg";
@@ -21,7 +18,7 @@ import PlanetLabsImage from "src/assets/images/planet-labs.png";
 const testimonials: TestimonialType[] = [
   {
     id: 0,
-    from: "Head of Security, Intel Sports",
+    from: "Head of Security, Intel Sports Group",
     description:
       "“The quality of work delivered by Deep Armor so far has been outstanding. I can recommend you to other BUs without a doubt and would be happy to kick start the 'preferred vendors' process.”",
     image: IntelSportsImage,
@@ -35,14 +32,14 @@ const testimonials: TestimonialType[] = [
   },
   {
     id: 2,
-    from: "CTO & Senior Director, Cloud Networking",
+    from: "CTO & Senior Director, Cisco Cloud Networking",
     description:
       "“There are collaterals we are deriving out of this effort that can be leveraged for long term integration into our release process. Thank you and your team, it has been great experience. Deep Armor team has done excellent work in doing PEN testing for DC products”",
     image: mobile,
   },
   {
     id: 3,
-    from: "VP of Software Engineering",
+    from: "VP of Software Engineering, Willow Innovations",
     description:
       "“Thank you for all the fantastic work on [our products] in the past few years.”",
     image: mobile,
@@ -56,7 +53,7 @@ const testimonials: TestimonialType[] = [
   },
   {
     id: 5,
-    from: "Senior Architect, Intel IoTG",
+    from: "Senior Architect, Intel IoT Group",
     description:
       "“Thanks again for all the help. It really helped to close security validation items. We enjoyed working with you on this.”",
     image: IntelIotgImage,

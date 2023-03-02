@@ -12,13 +12,13 @@ const HealthcareIomtAndMedicalDeviceSecurity = () => {
         manufacturer. In the United States, the Food & Drug Administration (US
         FDA) has clearly defined{" "}
         <a
-          style={{ color: "#0087b2" }}
+          style={{ color: "#0b8ccc" }}
           target="_blank"
           rel="noreferrer"
           href="https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity"
         >
           cybersecurity guidelines
-        </a>
+        </a>{" "}
         to be followed by manufacturers and documentation to be included as part
         of their 510(k) submission. Similarly, the CE Mark for healthcare
         products sold in Europe requires cybersecurity evaluations to be in

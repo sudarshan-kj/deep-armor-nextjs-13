@@ -34,16 +34,16 @@ const WebMobileAndCloudSecurity = () => {
           <u>your responsibility</u>
         </b>{" "}
         to ensure the security of your applications, APIs, user authentication &
-        authorization, configurations and controls. Per the study by IBM
-        Security Research and the Ponemon Institute in 2022,{" "}
-        <b>
+        authorization, configurations and controls. Per a recent study by IBM
+        Security Research and the Ponemon Institute,{" "}
+        <b style={{ color: "#0b8ccc" }}>
           <i>
             “Nearly half, or 43%, of organizations had not started or were in
             early stages of applying practices to secure their cloud
-            environments”
+            environments.”
           </i>
-        </b>
-        . Cloud misconfigurations continue to be one of the primary sources of
+        </b>{" "}
+        Cloud misconfigurations continue to be one of the primary sources of
         cyberattacks for all businesses - large and small.
       </p>
       <p>
@@ -53,7 +53,7 @@ const WebMobileAndCloudSecurity = () => {
         environments, particularly for SOC2, PCI DSS, CIS, GDPR, HIPAA, AWS Well
         Architected Framework and ISO 27001. For more details on Gauntlet, visit{" "}
         <a
-          style={{ color: "#0087b2" }}
+          style={{ color: "#0b8ccc" }}
           href="/gauntlet"
           target="_blank"
           rel="noreferrer"

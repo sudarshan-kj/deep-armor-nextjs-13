@@ -29,7 +29,7 @@ const SideInfoBar = () => {
       <hr />
       <SectionItem
         icon={HandsHoldingGlobeIcon}
-        content="Powered by Black Hat Trainers"
+        content="Championing Innovations and IoT and Cloud Security"
       />
     </div>
   );
