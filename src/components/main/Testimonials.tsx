@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import styles from "./Testimonials.module.scss";
 import TestimonialCard from "./TestimonialCard";
-import mobile from "src/assets/images/mobile.jpg";
 import { TestimonialType } from "src/types";
 import { useState } from "react";
 import ArrowRight from "src/assets/icons/arrow-right.svg";
