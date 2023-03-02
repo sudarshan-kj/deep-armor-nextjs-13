@@ -1,8 +1,7 @@
 import { ReactElement } from "react";
 import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
 import AboutUsItemLayout from "src/layouts/AboutUsItemLayout";
-import SecurityEventCard from "src/components/aboutUs/SecurityEventCard";
-import hardware from "src/assets/images/hardware.jpg";
+import SecurityEventCard from "src/components/group/aboutUs/SecurityEventCard";
 import { SecurityEventType } from "src/types";
 import styles from "src/styles/pages/AboutUs.module.scss";
 
@@ -23,7 +22,7 @@ import Ciso from "src/assets/conference-logos/ciso-logo.jpeg";
 import OwaspSeaside from "src/assets/conference-logos/owasp-seaside-logo.jpeg";
 
 import Image from "next/image";
-import BlackHatSummitEventImage from "src/assets/images/blackhat-summit.png";
+import BlackHatEventImage from "src/assets/images/blackhat-event.png";
 import SaconBreachAndAttackSummitImage from "src/assets/images/sacon-breach-and-attack-summit.png";
 
 const conferenceLogos = [
@@ -52,7 +51,7 @@ const securityEvents: SecurityEventType[] = [
       "Deep Armor has been invited three times to conduct trainings at Black Hat USA, Las Vegas. This is one of the most prestigious security events in the world. Our innovative research and hands-on approaches for learning IoT security has been very well received by students at Black Hat Events. Our security team has also presented our research at Black Hat Europe and Asia.",
     location: "Las Vegas",
     date: "2019",
-    image: BlackHatSummitEventImage,
+    image: BlackHatEventImage,
   },
   {
     id: 1,

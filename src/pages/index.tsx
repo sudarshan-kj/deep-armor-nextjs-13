@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "src/components/main/Hero";
-import SideInfoBar from "src/components/main/SideInfoBar";
-import Solutions from "src/components/main/Solutions";
-import Testimonials from "src/components/main/Testimonials";
+import Hero from "src/components/group/main/Hero";
+import SideInfoBar from "src/components/group/main/SideInfoBar";
+import Solutions from "src/components/group/main/Solutions";
+import Testimonials from "src/components/group/main/Testimonials";
 import styles from "./HomePage.module.scss";
 import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";

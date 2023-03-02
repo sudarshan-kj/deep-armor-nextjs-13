@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import ServicesNavigationLayout from "src/layouts/ServicesNavigationLayout";
-import { services } from "src/components/main/Solutions";
+import { services } from "src/components/group/main/Solutions";
 
 const Solutions = () => {
   const router = useRouter();

@@ -29,7 +29,7 @@ $img-width: 23%;
     .titleBar {
       @include flex(space-between);
       flex-wrap: wrap;
-      color: $nav-hover-link-color;
+      color: $sub-heading-color;
       .mainTitle {
         color: #000;
         font-size: 0.85rem;

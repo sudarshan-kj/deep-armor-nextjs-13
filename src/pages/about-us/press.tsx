@@ -1,6 +1,6 @@
 import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
 import AboutUsItemLayout from "src/layouts/AboutUsItemLayout";
-import PressCard from "src/components/aboutUs/PressCard";
+import PressCard from "src/components/group/aboutUs/PressCard";
 import { PressType } from "src/types";
 
 const pressItems: PressType[] = [

@@ -1,7 +1,7 @@
 import React from "react";
 import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
 import AboutUsItemLayout from "src/layouts/AboutUsItemLayout";
-import CommunityEventCard from "src/components/aboutUs/CommunityEventCard";
+import CommunityEventCard from "src/components/group/aboutUs/CommunityEventCard";
 import hardware from "src/assets/images/hardware.jpg";
 import { CommunityEventType } from "src/types";
 

@@ -34,8 +34,9 @@
     }
     .designation > h5 {
       display: inline-block;
-      color: $nav-hover-link-color;
+      color: $sub-heading-color;
       margin-right: 0.5rem;
+      font-weight: 600;
     }
     h4 {
       font-size: 1rem;

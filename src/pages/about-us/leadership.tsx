@@ -1,7 +1,7 @@
 import AboutUsItemLayout from "src/layouts/AboutUsItemLayout";
 import AboutUsNavigationLayout from "src/layouts/AboutUsNavigationLayout";
 import styles from "src/styles/pages/AboutUs.module.scss";
-import LeaderCard from "src/components/aboutUs/LeaderCard";
+import LeaderCard from "src/components/group/aboutUs/LeaderCard";
 import SumanthDP from "src/assets/images/man-sumanth.jpeg";
 import SridharDP from "src/assets/images/man-sridhar.jpeg";
 import NitinDP from "src/assets/images/man-nitin.jpg";
@@ -20,7 +20,7 @@ const leaders: LeadersType[] = [
   {
     id: 0,
     thumbnail: SumanthDP,
-    name: "Sumanth",
+    name: "Sumanth Naropanth",
     designation: "Founder and CEO",
     linkedinLink: "https://www.linkedin.com/in/snaropanth",
     description: "",
@@ -28,7 +28,7 @@ const leaders: LeadersType[] = [
   {
     id: 1,
     thumbnail: SridharDP,
-    name: "Sridhar",
+    name: "Sridhar Subramanian",
     designation: "Advisor",
     linkedinLink: "https://www.linkedin.com/in/sridhar-s-60b3326",
     description: "",
@@ -37,7 +37,7 @@ const leaders: LeadersType[] = [
     id: 2,
     thumbnail: NitinDP,
     name: "Nitin Lakshmanan",
-    designation: "AVP Security Expert",
+    designation: "AVP - Security Consulting",
     linkedinLink: "https://www.linkedin.com/in/nitin-lakshmanan-66088075",
     description: "",
   },
@@ -45,7 +45,7 @@ const leaders: LeadersType[] = [
     id: 3,
     thumbnail: SunilDP,
     name: "Sunil Kumar",
-    designation: "AVP Security Research",
+    designation: "AVP - Security Research",
     linkedinLink: "https://www.linkedin.com/in/sunil-kumar-b4a2616b",
     description: "",
   },

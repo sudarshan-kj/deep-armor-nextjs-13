@@ -5,7 +5,7 @@ import OptionsIcon from "src/assets/icons/options.svg";
 import CloseIcon from "src/assets/icons/close.svg";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
-import { services, products } from "src/components/main/Solutions";
+import { services, products } from "src/components/group/main/Solutions";
 
 const Navbar = () => {
   const [isMediumScreen, setIsMediumScreen] = useState<boolean | null>(null);
