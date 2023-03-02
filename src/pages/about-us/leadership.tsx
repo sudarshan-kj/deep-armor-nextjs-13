@@ -4,8 +4,8 @@ import styles from "src/styles/pages/AboutUs.module.scss";
 import LeaderCard from "src/components/aboutUs/LeaderCard";
 import SumanthDP from "src/assets/images/man-sumanth.jpeg";
 import SridharDP from "src/assets/images/man-sridhar.jpeg";
-import NitinDP from "src/assets/images/man-nitin.jpeg";
-import SunilDP from "src/assets/images/man-sunil.jpeg";
+import NitinDP from "src/assets/images/man-nitin.jpg";
+import SunilDP from "src/assets/images/man-sunil.jpg";
 
 type LeadersType = {
   id: number;

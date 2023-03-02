@@ -11,11 +11,9 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className={outfit.className}>
       {isGauntletPage ? (
-        <div>
-          <GauntletLayout>
-            <Component {...pageProps} />
-          </GauntletLayout>
-        </div>
+        <GauntletLayout>
+          <Component {...pageProps} />
+        </GauntletLayout>
       ) : (
         <MainLayout>{getLayout(<Component {...pageProps} />)}</MainLayout>
       )}

@@ -7,14 +7,13 @@ import WhyGauntlet from "src/components/gauntlet/sections/WhyGauntletSection/Why
 
 const GauntletPage = () => {
   return (
-    <div>
+    <>
       <SkewedRectangle>
         <SkewedRectangleContent />
       </SkewedRectangle>
       <SecurityThreatSection />
       <SectionBreak />
-      <WhyGauntlet />
-    </div>
+    </>
   );
 };
 

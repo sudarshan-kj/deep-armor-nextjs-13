@@ -7,6 +7,7 @@ import dashboard4 from "src/assets/images/gauntlet/dashboard-4.png";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import styles from "./SkewedRectangleContent.module.scss";
+import GauntletLogo from "src/assets/icons/gauntlet-logo.svg";
 
 const SkewedRectangleContent = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -60,13 +61,15 @@ const SkewedRectangleContent = () => {
   return (
     <div>
       <div className={styles.navBar}>
-        <h3>&lt;logo&gt; </h3>
         <h3 onClick={handleContactClick}>Contact Us</h3>
       </div>
       <div className={styles.flexContainer}>
         <div className={styles.textContent}>
-          <h1>Gauntlet</h1>
-          <p>Automated cloud security & compliance monitoring by Deep Armor</p>
+          <GauntletLogo />
+          <p>
+            Automated security & compliance monitoring for your cloud
+            environment
+          </p>
         </div>
         <div className={styles.imagesBox}>
           <div

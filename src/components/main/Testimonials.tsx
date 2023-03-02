@@ -11,9 +11,9 @@ import IntelSportsImage from "src/assets/images/intel-sports.png";
 import IntelIotgImage from "src/assets/images/intel-iotg.png";
 import CiscoImage from "src/assets/images/cisco.png";
 import SwiggyImage from "src/assets/images/swiggy.png";
-import RocksetImage from "src/assets/images/rockset.jpg";
+import RocksetImage from "src/assets/images/rockset.png";
 import WillowImage from "src/assets/images/willow.jpg";
-import BlackHatImage from "src/assets/images/black-hat.png";
+import BlackHatTrainingImage from "src/assets/images/blackhat-training.png";
 import PlanetLabsImage from "src/assets/images/planet-labs.png";
 
 const testimonials: TestimonialType[] = [
@@ -71,7 +71,7 @@ const testimonials: TestimonialType[] = [
     from: "Black Hat Trainings",
     description:
       "“Course was great overall and met expectations. Even with my limited background with Linux, Python, Etc. I was still able to learn and understand the concepts. Instructors knew the material well and were prepared to answer questions. Great course! Thank you.”",
-    image: BlackHatImage,
+    image: BlackHatTrainingImage,
   },
 ];
 

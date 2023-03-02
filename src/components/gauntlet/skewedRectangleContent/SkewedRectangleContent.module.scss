@@ -2,45 +2,60 @@
 @import "src/styles/variables.scss";
 
 .navBar {
-  @include flex(space-between);
+  @include flex(flex-end);
   padding: 2rem 5rem;
   h3 {
     font-weight: 500;
     text-transform: lowercase;
-    color: #fff;
     &:hover {
       cursor: pointer;
-      color: inherit;
+      color: $gauntlet-text-color-light-blue;
     }
   }
 }
 
 .flexContainer {
-  padding: 0 5rem;
-  margin-top: 2.5rem;
+  padding: 0 2rem;
   @include flex("");
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include md-and-above {
+    flex-direction: row;
+    padding: 0 6rem;
+    margin-top: 2.5rem;
+  }
   .textContent {
-    h1 {
-      font-size: 4.5rem;
-      font-weight: 600;
-      background: linear-gradient(89.61deg, #acf8ff 13.4%, #fff27a 129.52%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
+    @include md-and-above {
+      width: 510px;
+    }
+    @include md-and-below {
+      svg {
+        transform: scale(0.8);
+      }
     }
     p {
       max-width: 470px;
-      font-size: 1.6rem;
-      font-weight: 600;
+      font-size: min(1.05vw + 0.8rem, 1.6rem);
+      font-weight: 500;
       margin: 0;
+      color: $gauntlet-text-color-light-blue;
+      text-align: center;
+      @include md-and-above {
+        margin: 1rem 0 0;
+        text-align: left;
+      }
     }
   }
   .imagesBox {
-    margin-left: 5rem;
-    width: 514px;
-    height: 288px;
+    width: 271px;
+    height: 151px;
+    margin: 3rem 0;
+    @include md-and-above {
+      width: 489px;
+      height: 274px;
+      margin: 0;
+    }
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.233);
     position: relative;

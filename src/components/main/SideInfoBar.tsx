@@ -29,7 +29,7 @@ const SideInfoBar = () => {
       <hr />
       <SectionItem
         icon={HandsHoldingGlobeIcon}
-        content="Championing Innovations and IoT and Cloud Security"
+        content="Championing Innovations in IoT and Cloud Security"
       />
     </div>
   );

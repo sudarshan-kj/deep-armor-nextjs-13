@@ -10,6 +10,7 @@ const GauntletFooter = ({ inViewport, forwardedRef }: any) => {
         <p>
           You can write to us at <u>gauntlet@deeparmor.com</u>
         </p>
+        <h6>© 2023 All rights reserved</h6>
       </div>
     </footer>
   );

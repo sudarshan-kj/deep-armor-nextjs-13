@@ -23,6 +23,8 @@ import Ciso from "src/assets/conference-logos/ciso-logo.jpeg";
 import OwaspSeaside from "src/assets/conference-logos/owasp-seaside-logo.jpeg";
 
 import Image from "next/image";
+import BlackHatSummitEventImage from "src/assets/images/blackhat-summit.png";
+import SaconBreachAndAttackSummitImage from "src/assets/images/sacon-breach-and-attack-summit.png";
 
 const conferenceLogos = [
   BlackHat,
@@ -50,7 +52,7 @@ const securityEvents: SecurityEventType[] = [
       "Deep Armor has been invited three times to conduct trainings at Black Hat USA, Las Vegas. This is one of the most prestigious security events in the world. Our innovative research and hands-on approaches for learning IoT security has been very well received by students at Black Hat Events. Our security team has also presented our research at Black Hat Europe and Asia.",
     location: "Las Vegas",
     date: "2019",
-    image: hardware,
+    image: BlackHatSummitEventImage,
   },
   {
     id: 1,
@@ -59,7 +61,7 @@ const securityEvents: SecurityEventType[] = [
       "Our team regularly speaks and conducts deep-tech security trainings at the Security Architecture Conference (SACON) and the Breach & Attack Summit in Bangalore, India. In addition to technical sessions, our team has participated in CISO programs to discuss the latest security threats and ways to improve security posture across multiple industry sectors",
     location: "Bengaluru",
     date: "2020",
-    image: hardware,
+    image: SaconBreachAndAttackSummitImage,
   },
   //dummy card so that we get atleast a card's space
 ];

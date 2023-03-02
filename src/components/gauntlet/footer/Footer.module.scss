@@ -5,15 +5,18 @@
   width: 100%;
   height: 200px;
   background-color: $gauntlet-bg-color-light;
-  position: absolute;
-  left: 0;
   @include flex(center);
   text-align: center;
   h1 {
     font-weight: 500;
+    color: $gauntlet-text-color-light-blue;
   }
   p {
     font-size: 1.4rem;
+    u {
+      color: inherit;
+      color: $gauntlet-text-color-light-blue;
+    }
   }
 }
 
