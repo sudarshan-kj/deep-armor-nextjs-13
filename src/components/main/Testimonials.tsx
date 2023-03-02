@@ -82,7 +82,7 @@ const Testimonials = () => {
     useState<boolean | null>(null);
   const [animationDirection, setAnimationDirection] = useState<
     "left" | "right"
-  >("right");
+  >("left");
 
   let MAX_TESTIMONIALS_PER_SECTION = isMediumSizedOrGreaterScreen ? 3 : 1;
 
