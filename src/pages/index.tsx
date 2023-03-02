@@ -11,14 +11,14 @@ const HomePage = () => {
   const [isMediumSizedOrGreaterScreen, setIsMediumSizedOrGreaterScreen] =
     useState<boolean | null>(null);
 
-  const isScreenWidthGreaterThan768px = useMediaQuery({
-    query: "(min-width: 1200px)",
+  const isScreenWidthGreaterThan1400px = useMediaQuery({
+    query: "(min-width: 1400px)",
   });
   /*it may look like we are unnecessarily using a state variable and useEffect here, but this is done to counter the rehydration
  problem mentioned here: https://nextjs.org/docs/messages/react-hydration-error*/
   useEffect(() => {
-    setIsMediumSizedOrGreaterScreen(isScreenWidthGreaterThan768px);
-  }, [isScreenWidthGreaterThan768px]);
+    setIsMediumSizedOrGreaterScreen(isScreenWidthGreaterThan1400px);
+  }, [isScreenWidthGreaterThan1400px]);
   return (
     <>
       <Hero />
