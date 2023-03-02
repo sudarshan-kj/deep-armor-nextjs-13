@@ -10,8 +10,10 @@ import { useMediaQuery } from "react-responsive";
 
 import IntelSportsImage from "src/assets/images/intel-sports.png";
 import IntelIotgImage from "src/assets/images/intel-iotg.png";
+import CiscoImage from "src/assets/images/cisco.png";
 import SwiggyImage from "src/assets/images/swiggy.png";
 import RocksetImage from "src/assets/images/rockset.jpg";
+import WillowImage from "src/assets/images/willow.jpg";
 import BlackHatImage from "src/assets/images/black-hat.png";
 import PlanetLabsImage from "src/assets/images/planet-labs.png";
 
@@ -35,14 +37,14 @@ const testimonials: TestimonialType[] = [
     from: "CTO & Senior Director, Cisco Cloud Networking",
     description:
       "“There are collaterals we are deriving out of this effort that can be leveraged for long term integration into our release process. Thank you and your team, it has been great experience. Deep Armor team has done excellent work in doing PEN testing for DC products”",
-    image: mobile,
+    image: CiscoImage,
   },
   {
     id: 3,
     from: "VP of Software Engineering, Willow Innovations",
     description:
       "“Thank you for all the fantastic work on [our products] in the past few years.”",
-    image: mobile,
+    image: WillowImage,
   },
   {
     id: 4,
