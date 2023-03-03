@@ -24,7 +24,7 @@ const RoleOfGauntletSection = ({ forwardedRef, inViewport }: any) => {
             </div>
             <div className={styles.separator} />
             <div className={styles.description}>
-              <p>Secure with Deep Armor's expert</p>
+              <p>Secure with Deep Armor&apos;s expert</p>
               <h4>Consulting Services</h4>
             </div>
           </div>
