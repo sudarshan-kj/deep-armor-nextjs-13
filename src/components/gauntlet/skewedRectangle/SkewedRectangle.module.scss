@@ -8,8 +8,8 @@
     width: 100%;
     background: $gauntlet-bg-color-light;
     @include sm-and-above {
-      clip-path: polygon(0 0, 100% 0, 92% 86%, 4% 77%);
-      height: 600px;
+      clip-path: polygon(0 0, 100% 0, 95% 88%, 4% 80%);
+      height: 550px;
     }
   }
 }

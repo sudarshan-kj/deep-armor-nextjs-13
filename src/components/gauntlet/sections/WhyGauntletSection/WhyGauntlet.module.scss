@@ -23,6 +23,33 @@
   }
   .flexContainer {
     @include flex(center);
+    flex-direction: column;
+
+    h1 {
+      margin-top: 2rem;
+    }
+    .logosContainer {
+      max-width: 80%;
+      .complianceLogos {
+        padding: 2rem;
+        flex-wrap: wrap;
+        @include flex(center);
+        border-radius: 10px;
+        .logo {
+          height: 100px;
+          width: 100px;
+          @include md-and-above {
+            height: 140px;
+            width: 140px;
+          }
+          position: relative;
+          margin: 1rem;
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
   }
   .triangle {
     height: 0;

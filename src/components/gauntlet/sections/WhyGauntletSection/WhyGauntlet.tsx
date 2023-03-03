@@ -2,6 +2,25 @@ import React from "react";
 import TextWithTickMark from "../../textWithTickMark/TextWithTickMark";
 import styles from "./WhyGauntlet.module.scss";
 import handleViewport from "react-in-viewport";
+import Image from "next/image";
+
+import AwsLogo from "src/assets/gauntlet-compliance-logos/aws.png";
+import CisLogo from "src/assets/gauntlet-compliance-logos/cis.png";
+import GdprLogo from "src/assets/gauntlet-compliance-logos/gdpr.png";
+import HipaaLogo from "src/assets/gauntlet-compliance-logos/hipaa.png";
+import PciDss from "src/assets/gauntlet-compliance-logos/pci-dss.png";
+import Soc2Logo from "src/assets/gauntlet-compliance-logos/soc2.png";
+import IsmLogo from "src/assets/gauntlet-compliance-logos/ism.png";
+
+const complianceLogos = [
+  AwsLogo,
+  CisLogo,
+  GdprLogo,
+  HipaaLogo,
+  PciDss,
+  Soc2Logo,
+  IsmLogo,
+];
 
 const whyGauntletPointers = [
   {
@@ -45,9 +64,25 @@ const WhyGauntlet = ({ inViewport, forwardedRef }: any) => {
               {whyGauntletPointers.map((reason) => (
                 <TextWithTickMark key={reason.id} {...reason} />
               ))}
+              <p>
+                <i>
+                  *Vulnerability triage & remediation guidance is available
+                  under Gauntlet Premium Subscription
+                </i>
+              </p>
             </div>
           </div>
           <div className={`${styles.triangle} ${styles.bottomTriangle}`} />
+        </div>
+        <h1>Achieve & Stay Compliant with</h1>
+        <div className={styles.logosContainer}>
+          <div className={styles.complianceLogos}>
+            {complianceLogos.map((logo, index) => (
+              <div key={index} className={styles.logo}>
+                <Image src={logo} fill={true} alt="logo image" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
