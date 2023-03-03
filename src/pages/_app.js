@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
         <GauntletLayout>
           <Head>
             <title>Gauntlet by Deep Armor</title>
-            <link href="/gauntlet.svg" />
+            <link rel="icon" type="image/svg+xml" href="/gauntlet.svg" />
           </Head>
           <Component {...pageProps} />
         </GauntletLayout>
@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps }) {
         <MainLayout>
           <Head>
             <title>Deep Armor</title>
-            <link href="/logo-with-bg.svg" />
+            <link rel="icon" type="image/svg+xml" href="/logo-with-bg.svg" />
           </Head>
           {getLayout(<Component {...pageProps} />)}
         </MainLayout>
