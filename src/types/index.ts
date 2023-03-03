@@ -32,9 +32,8 @@ export type TestimonialType = {
   animationDirection?: "left" | "right";
 };
 
-export type SecurityThreatInfoType = {
+export type CloudMisconfigurationInfoType = {
   id?: number;
-  percentage: number;
-  description1: string;
-  description2: string;
+  description: string;
+  additionalInfo: string;
 };

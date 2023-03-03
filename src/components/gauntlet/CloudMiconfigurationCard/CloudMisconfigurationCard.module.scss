@@ -2,17 +2,19 @@
 @import "src/styles/variables.scss";
 
 .container {
+  @include flex(center);
   position: relative;
   text-align: center;
-  padding: 1rem;
   background: $gauntlet-bg-color-light;
+  width: 340px;
+  height: 200px;
+  padding: 0 1.5rem;
   border-radius: 12px;
-  width: 245px;
   margin: 1rem;
   border: 2px solid $gauntlet-security-threat-border-color;
   overflow: hidden;
   h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: $gauntlet-security-threat-hl-color;
     font-weight: 600;
   }

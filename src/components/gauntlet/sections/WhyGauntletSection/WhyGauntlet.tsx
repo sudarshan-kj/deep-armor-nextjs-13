@@ -6,22 +6,26 @@ import handleViewport from "react-in-viewport";
 const whyGauntletPointers = [
   {
     id: 0,
-    textContent: "150+ Security Checks",
+    textContent: "Over 250 security checks run everyday",
   },
   {
     id: 1,
-    textContent: "Automated Daily Scans",
+    textContent:
+      "Discover, track and mitigate security misconfigurations in your cloud",
   },
   {
     id: 2,
-    textContent: "Easy to use Dashboards",
+    textContent:
+      "Agent-less setup - almost zero customer-side setup & maintenance",
   },
   {
     id: 3,
-    textContent: "Integrate with bug tracking tools",
+    textContent:
+      "Online dashboard gives complete visibility of security health",
   },
+  { id: 4, textContent: "Easy integration with bug tracking tools" },
   {
-    id: 4,
+    id: 5,
     textContent: "Managed Security Service from Deep Armor*",
   },
 ];
@@ -32,7 +36,7 @@ const WhyGauntlet = ({ inViewport, forwardedRef }: any) => {
       ref={forwardedRef}
       className={`${styles.container} ${inViewport && styles.drop}`}
     >
-      <h1>why Gauntlet?</h1>
+      <h1>Why Gauntlet?</h1>
       <div className={styles.flexContainer}>
         <div>
           <div className={`${styles.triangle} ${styles.topTriangle}`} />

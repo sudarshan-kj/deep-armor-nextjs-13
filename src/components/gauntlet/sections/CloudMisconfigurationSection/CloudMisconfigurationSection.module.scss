@@ -1,0 +1,21 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.container {
+  padding: 0 5rem;
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $gauntlet-text-color-light-blue;
+  }
+  .contentContainer {
+    padding: 2rem 0;
+    @include flex(space-between);
+    flex-wrap: wrap;
+  }
+}
+.drop {
+  animation: drop 1s;
+}
+
+@include dropAnimation();
