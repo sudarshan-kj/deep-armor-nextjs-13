@@ -2,12 +2,22 @@
 @import "src/styles/variables.scss";
 
 .container {
-  padding: 0 5rem;
+  padding: 0 2rem;
+
+  @include md-and-above {
+    padding: 0 5rem;
+  }
   h1 {
     font-size: 2rem;
     font-weight: 600;
     color: $gauntlet-text-color-light-blue;
+    @include md-and-below {
+      margin-top: 1.7rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
   }
+
   .contentContainer {
     padding: 2rem 0;
     @include flex(space-between);

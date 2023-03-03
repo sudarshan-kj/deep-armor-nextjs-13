@@ -5,6 +5,7 @@ import SkewedRectangleContent from "src/components/gauntlet/skewedRectangleConte
 import SectionBreak from "src/components/gauntlet/sectionbreak/SectionBreak";
 import WhyGauntlet from "src/components/gauntlet/sections/WhyGauntletSection/WhyGauntlet";
 import RoleOfGauntletSection from "src/components/gauntlet/sections/RoleOfGauntletSection/RoleOfGauntletSection";
+import SharedResponsiblitySection from "src/components/gauntlet/sections/SharedResponsibilitySection/SharedResponsibilitySection";
 
 const GauntletPage = () => {
   return (
@@ -17,6 +18,8 @@ const GauntletPage = () => {
       <WhyGauntlet />
       <SectionBreak />
       <RoleOfGauntletSection />
+      <SectionBreak />
+      <SharedResponsiblitySection />
     </>
   );
 };

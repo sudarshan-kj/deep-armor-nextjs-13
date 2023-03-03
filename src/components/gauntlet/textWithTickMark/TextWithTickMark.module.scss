@@ -11,7 +11,10 @@
   .textContainer {
     margin-left: 1rem;
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      @include md-and-above {
+        font-size: 1.5rem;
+      }
       font-weight: 400;
     }
     h5 {

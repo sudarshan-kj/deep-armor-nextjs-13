@@ -1,0 +1,28 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+.container {
+  @include flex(center);
+  flex-direction: column;
+  margin: 0 4rem;
+  h2 {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  .descriptionContainer {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: $gauntlet-bg-color-light;
+    margin-top: 2rem;
+    p {
+      font-size: 1.3rem;
+      max-width: 220px;
+      text-align: center;
+      font-weight: 500;
+      span {
+        text-transform: uppercase;
+        color: $gauntlet-security-threat-hl-color;
+      }
+    }
+  }
+}
