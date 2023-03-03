@@ -10,12 +10,12 @@
 
 .content {
   @include flex(flex-start);
-  max-width: $max-window-width;
-  margin: 0 auto;
+  // max-width: $max-window-width;
   padding: 0 0 0 1.5rem;
   height: 200px;
   @include md-and-above {
     height: 220px;
+    margin-left: 3rem;
   }
   @include lg-and-above {
     height: 320px;
@@ -24,7 +24,7 @@
 
 .heading {
   font-family: "SegoeUI";
-  font-size: min(1.05vw + 0.8rem, 2rem);
+  font-size: min(1.05vw + 0.8rem, 3rem);
   h2 {
     font-weight: 600;
     color: #fff;
@@ -36,11 +36,11 @@
 
   p {
     color: #dadada;
-    font-weight: 100;
+    font-weight: 200;
     max-width: 97%;
     font-size: 0.8rem;
     @include lg-and-above {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
   }
 }

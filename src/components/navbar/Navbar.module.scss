@@ -11,8 +11,10 @@
 .header {
   @include flex(space-between);
   padding: 1rem;
-  max-width: $max-window-width;
-  margin: 0 auto;
+  // max-width: $max-window-width;
+  @include md-and-above {
+    margin: 0 3rem;
+  }
   position: relative;
 
   .logoContainer {

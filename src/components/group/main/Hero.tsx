@@ -11,7 +11,7 @@ const Hero = () => {
           <h2>
             Deep-tech <span>security.</span>
           </h2>
-          <h2>Peace of mind</h2>
+          <h2>Peace of mind.</h2>
           <p>
             Award-winning cybersecurity firm. Trusted partner to over 35
             companies across industry sectors & geographies.
