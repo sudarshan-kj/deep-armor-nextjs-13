@@ -4,18 +4,38 @@
 .container {
   @include flex(center);
   flex-direction: column;
-  margin: 0 4rem;
+  .iconContainer {
+    @include md-and-below {
+      height: 100px;
+    }
+  }
+  margin: 0 1rem;
+  @include md-and-above {
+    margin: 0 4rem;
+  }
+  @include md-and-below {
+    svg {
+      scale: (0.7);
+    }
+  }
+
   h2 {
-    margin-top: 1rem;
     font-weight: 600;
+    margin-top: 1rem;
+
+    @include md-and-below {
+      font-size: 1rem;
+      margin-top: 0;
+    }
   }
   .descriptionContainer {
     padding: 1rem;
     border-radius: 5px;
     background-color: $gauntlet-bg-color-light;
     margin-top: 2rem;
+
     p {
-      font-size: 1.3rem;
+      font-size: min(1.05vw + 0.8rem, 1.6rem);
       max-width: 220px;
       text-align: center;
       font-weight: 500;

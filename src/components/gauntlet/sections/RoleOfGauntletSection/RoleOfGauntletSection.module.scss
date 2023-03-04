@@ -5,6 +5,7 @@
   margin: 3rem 0;
   @include flex(center);
   flex-direction: column;
+  padding: 0 1rem;
   h1 {
     font-size: 1.9rem;
     font-weight: 500;

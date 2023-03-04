@@ -4,7 +4,14 @@
 .container {
   --traingle-width: 195px;
   --traingle-height: 60px;
+  padding: 0 1rem;
   @include md-and-above {
+    --traingle-width: 290px;
+    --traingle-height: 60px;
+    padding: 0 5rem;
+    padding-bottom: 2rem;
+  }
+  @include lg-and-above {
     --traingle-width: 390px;
     --traingle-height: 60px;
     padding: 0 5rem;
@@ -29,9 +36,11 @@
       margin-top: 3rem;
     }
     .logosContainer {
-      max-width: 80%;
+      @include lg-and-above {
+        max-width: 80%;
+      }
+
       .complianceLogos {
-        padding: 2rem;
         flex-wrap: wrap;
         @include flex(center);
         border-radius: 10px;

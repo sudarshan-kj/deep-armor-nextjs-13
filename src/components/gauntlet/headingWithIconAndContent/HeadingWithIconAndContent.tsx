@@ -12,8 +12,10 @@ const HeadingWithIconAndContent = ({
 }) => {
   return (
     <div className={styles.container}>
-      <Icon />
-      <h2>{heading}</h2>
+      <div className={styles.iconContainer}>
+        <Icon />
+        <h2>{heading}</h2>
+      </div>
       <div className={styles.descriptionContainer}>{description}</div>
     </div>
   );
