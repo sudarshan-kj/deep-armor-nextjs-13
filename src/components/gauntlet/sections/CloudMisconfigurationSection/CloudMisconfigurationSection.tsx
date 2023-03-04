@@ -2,7 +2,6 @@ import React from "react";
 import { CloudMisconfigurationInfoType } from "src/types";
 import styles from "./CloudMisconfigurationSection.module.scss";
 import CloudMisconfigurationCard from "src/components/gauntlet/CloudMiconfigurationCard/CloudMisconfigurationCard";
-import handleViewport from "react-in-viewport";
 
 const cloudMisconfigurationInfo: Array<CloudMisconfigurationInfoType> = [
   {
@@ -33,7 +32,7 @@ const cloudMisconfigurationInfo: Array<CloudMisconfigurationInfoType> = [
     id: 4,
     description: "Default System Credentials",
     additionalInfo:
-      "Overly permissive access policies and privileges enable expanded access to far more assets than needed",
+      "Ensure all systems have default credentials which are restrictive or default-deny, to prevent all-encompassing access",
   },
   {
     id: 5,
