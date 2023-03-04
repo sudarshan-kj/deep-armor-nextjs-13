@@ -2,7 +2,7 @@
 @import "src/styles/variables.scss";
 
 .container {
-  --traingle-width: 195px;
+  --traingle-width: 165px;
   --traingle-height: 60px;
   padding: 0 1rem;
   @include md-and-above {
